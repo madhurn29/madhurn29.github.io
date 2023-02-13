@@ -3,7 +3,9 @@ import React, { useState } from "react";
 
 function ProjectCard({ imglink }) {
   const [link, setLink] = useState(imglink);
-  const handleEnter = () => {};
+  const handleEnter = () => {
+    console.log("handleEnter");
+  };
   return (
     <Box border={"1px solid red"}>
       <Image

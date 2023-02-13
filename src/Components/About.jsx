@@ -16,14 +16,14 @@ function About() {
     <Box
       id="about"
       className="about-section"
-      bg="#EAE7DC"
+      // bg="#EAE7DC"
       h={{ lg: "95vh" }}
-      border={"1px solid red"}
+      border={"1px solid re"}
       width={"100%"}
     >
       <Box
         className="inner-main-box"
-        border={"1px solid black"}
+        border={"1px solid blac"}
         display={"flex"}
         flexDirection={{ base: "column", lg: "row" }}
         m={{ lg: "20px auto" }}
@@ -33,7 +33,7 @@ function About() {
         <Box
           className="heading"
           w={{ lg: "40%" }}
-          border={"1px solid red"}
+          border={"1px solid re"}
           textAlign={"center"}
           pt={{ lg: "100px" }}
         >
@@ -45,7 +45,7 @@ function About() {
         <Box
           className="content-box"
           w={{ lg: "50%" }}
-          border={"1px solid red"}
+          border={"1px solid re"}
           px={"40px"}
           display={"flex"}
           flexDirection={{ base: "column", lg: "column" }}

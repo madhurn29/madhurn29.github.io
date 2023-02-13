@@ -4,14 +4,10 @@ import SkillBox from "./SkillBox";
 
 function Skills() {
   return (
-    <Box
-      id="skills"
-      border={"1px solid red"}
-      width={"100%"}
-      h={{ lg: "95vh" }}
-      bg="#141414"
-    >
-      <Text mt="30px" color="#fff" textAlign={"center"} fontSize={"6xl"}>Skills and Tool set </Text>
+    <Box id="skills" border={"1px solid red"} width={"100%"} h={{ lg: "95vh" }}>
+      <Text mt="30px" color="black" textAlign={"center"} fontSize={"6xl"}>
+        Skills and Tool set{" "}
+      </Text>
       <Box
         display={"flex"}
         flexDirection={{ base: "column", lg: "row" }}
@@ -22,7 +18,12 @@ function Skills() {
         m="20px auto"
         pt="50px"
       >
-        <Box w={{ base: "95%", lg: "60%" }}  m={"auto"} border={"1px solid re"} order={{base:2,lg:1}}>
+        <Box
+          w={{ base: "95%", lg: "60%" }}
+          m={"auto"}
+          border={"1px solid re"}
+          order={{ base: 2, lg: 1 }}
+        >
           <Grid
             templateColumns={{
               base: "repeat(3, 1fr)",
@@ -71,9 +72,9 @@ function Skills() {
           className="skill-image-box"
           display={"flex"}
           justifyContent={"center"}
-          order={{base:1,lg:2}}
+          order={{ base: 1, lg: 2 }}
         >
-          <Text fontSize={{lg:"5xl"}} color={"#fff"}>
+          <Text fontSize={{ lg: "5xl" }} color={"black"}>
             Skills
           </Text>
         </Box>
@@ -94,13 +95,18 @@ function Skills() {
           className="skill-image-box"
           display={"flex"}
           justifyContent={"center"}
-          order={{base:1,lg:1}}
+          order={{ base: 1, lg: 1 }}
         >
-          <Text fontSize={"5xl"} color={"#fff"}>
+          <Text fontSize={{lg:"5xl"}} color={"black"}>
             Tools
           </Text>
         </Box>
-        <Box w={{ base: "95%", lg: "50%" }} m={"auto"} border={"1px solid re"} order={{base:2,lg:2}}>
+        <Box
+          w={{ base: "95%", lg: "50%" }}
+          m={"auto"}
+          border={"1px solid re"}
+          order={{ base: 2, lg: 2 }}
+        >
           <Grid
             templateColumns={{
               base: "repeat(3, 1fr)",
@@ -125,7 +131,6 @@ function Skills() {
             <GridItem w="100%">
               <SkillBox icon={"postman-icon.png"} text={"Postman"} />
             </GridItem>
-            
           </Grid>
         </Box>
       </Box>

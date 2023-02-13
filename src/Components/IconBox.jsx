@@ -20,7 +20,7 @@ function IconBox() {
       >
         <Circle
           size={{ lg: "50px" }}
-          bg="#ff0000"
+          bg="#0077b5"
           color="white"
           _hover={{
             backgroundColor: "white",
@@ -35,7 +35,7 @@ function IconBox() {
       <Link id="contact-github" href="https://github.com/madhurn29" isExternal>
         <Circle
           size={{ lg: "50px" }}
-          bg="#ff0000"
+          bg="black"
           color="white"
           _hover={{
             backgroundColor: "white",
@@ -67,7 +67,7 @@ function IconBox() {
       <Link id="contact-phone" href="tel:+917304127701">
         <Circle
           size={{ lg: "50px" }}
-          bg="#ff0000"
+          bg="#32d04d"
           color="white"
           _hover={{
             backgroundColor: "white",

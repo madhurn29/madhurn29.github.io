@@ -5,7 +5,7 @@ import { Box, Image, Text } from "@chakra-ui/react";
 function Home() {
   return (
     <Box
-      bg="#141414"
+      bg="#FAF9F6"
       h={{ lg: "99vh" }}
       // w={"100%"}
       border={"1px solid whit"}
@@ -44,6 +44,7 @@ function Home() {
             className="home-img"
             src="madhur.jpg"
             borderRadius={"50%"}
+            border={"4px solid black"}
           />
         </Box>
         <Box
@@ -54,13 +55,13 @@ function Home() {
           justifyContent={"center"}
           alignItems={"center"}
         >
-          <Text fontSize={{base:"20px",lg:"5xl"}} color="#fff" border={"1px solid re"}>
+          <Text fontSize={{base:"20px",lg:"5xl"}} color="black" border={"1px solid re"}>
             Hello,
           </Text>
-          <Text fontSize={{base:"20px",lg:"6xl"}} id="user-detail-name" color={"#fff"}>
+          <Text fontSize={{base:"20px",lg:"6xl"}} id="user-detail-name" color={"black"}>
           I am Madhur Nadamwar
           </Text>{" "}
-          <Text color="#fff" fontSize={{base:"20px",lg:"6xl"}}>
+          <Text color="black" fontSize={{base:"20px",lg:"6xl"}}>
             Full Stack Developer
           </Text>
         </Box>

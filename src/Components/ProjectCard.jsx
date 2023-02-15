@@ -84,8 +84,8 @@ function ProjectCard({
           <Box
             className="TechStack_box"
             border={"1px solid re"}
-            w={{ lg: "80%" }}
-            display={{ lg: "flex" }}
+            w={{base:"80%", lg: "80%" }}
+            display={{base:"flex",sm:"flex", lg: "flex" }}
             gap={{ lg: "10px" }}
           >
             <TechStacks url={techStack_1 || ""} />

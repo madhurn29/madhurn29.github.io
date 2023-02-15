@@ -1,7 +1,9 @@
 import React from "react";
-
+import Bounce from "react-reveal/Bounce";
 import { Box, Image, Text } from "@chakra-ui/react";
 import Hello from "./Hello";
+import LightSpeed from "react-reveal/LightSpeed";
+import Slide from "react-reveal/Slide";
 
 function Home() {
   return (
@@ -39,13 +41,15 @@ function Home() {
           alignItems={"center"}
           // width={"80%"}
         >
-          <Image
-            width={{ base: "20%", sm: "25%", md: "35%", lg: "50%" }}
-            className="home-img"
-            src="madhur.jpg"
-            borderRadius={"50%"}
-            border={"4px solid black"}
-          />
+          <Bounce bottom>
+            <Image
+              width={{ base: "20%", sm: "25%", md: "35%", lg: "70%" }}
+              className="home-img"
+              src="madhur.jpg"
+              borderRadius={"50%"}
+              border={"8px solid #d9f2ff"}
+            />
+          </Bounce>
         </Box>
         <Box
           // width={"80%"}
@@ -63,18 +67,26 @@ function Home() {
             Hello,
           </Text> */}
           <Hello />
-          <Text color="black" fontSize={{ base: "20px", lg: "6xl" }}>I am</Text>
-          <Text
-            border={"1px solid re"}
-            fontSize={{ base: "20px", lg: "6xl" }}
-            id="user-detail-name"
-            color={"black"}
-          >
-            Madhur Nadamwar
-          </Text>{" "}
-          <Text color="black" fontSize={{ base: "20px", lg: "6xl" }}>
-            Full Stack Developer
-          </Text>
+          <Slide left>
+            <Text color="black" fontSize={{ base: "20px", lg: "6xl" }}>
+              I am
+            </Text>
+          </Slide>
+          <Slide right>
+            <Text
+              border={"1px solid re"}
+              fontSize={{ base: "20px", lg: "6xl" }}
+              id="user-detail-name"
+              color={"black"}
+            >
+              Madhur Nadamwar
+            </Text>
+          </Slide>
+          <Slide left>
+            <Text color="black" fontSize={{ base: "20px", lg: "6xl" }}>
+              Full Stack Developer
+            </Text>
+          </Slide>
         </Box>
       </Box>
     </Box>

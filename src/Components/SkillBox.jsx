@@ -1,10 +1,11 @@
 import { Box, Center, Image, Text } from "@chakra-ui/react";
 import React from "react";
-
+import LightSpeed from 'react-reveal/LightSpeed';
 function SkillBox({ text, icon }) {
   return (
     <Box className="skills-card">
       <Center>
+        <LightSpeed left>
         <Box
           border="1px solid #EAE7DC"
           cursor="pointer"
@@ -30,6 +31,7 @@ function SkillBox({ text, icon }) {
             </Text>
           </Center>
         </Box>
+        </LightSpeed>
       </Center>
     </Box>
   );

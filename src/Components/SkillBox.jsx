@@ -8,16 +8,16 @@ function SkillBox({ text, icon }) {
         <Box
           border="1px solid #EAE7DC"
           cursor="pointer"
-          bg={"#141414"}
+          bg={"#669DD0"}
           boxShadow="base"
           padding="28px 25px 0 25px"
           borderRadius="10px"
           width={{ base: "100px", lg: "100px" }}
           height={{ base: "120px", lg: "120px" }}
           sx={{ transition: "background ,color .5s" }}
-          // transition="background .5s"
+          transition="background .5s"
           color="white"
-          _hover={{ backgroundColor: "#EAE7DC", color: "black" }}
+          _hover={{ backgroundColor: "#196DB9", color: "black" }}
         >
           <Center>
             <Box width="40px" height="40px">

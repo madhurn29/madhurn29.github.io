@@ -1,5 +1,6 @@
 import { useRef } from "react";
 import About from "./About";
+import GithubStats from "./GithubStats";
 import Home from "./Home";
 import Navbar from "./Navbar";
 import Projects from "./Projects";
@@ -19,7 +20,7 @@ function Main() {
   return (
     <>
       <div className="container">
-        <div style={{ position: "sticky", top: "0px" }}>
+        <div style={{ position: "sticky", top: "0px", backgroundColor: "red" }}>
           <Navbar onClick={(e) => scrollToSection(e)} />
         </div>
         <div id="home">
@@ -40,6 +41,11 @@ function Main() {
         <div>
           <section>
             <Projects />
+          </section>
+        </div>
+        <div>
+          <section>
+            <GithubStats />
           </section>
         </div>
       </div>

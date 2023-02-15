@@ -17,6 +17,8 @@ function About() {
       id="about"
       className="about-section"
       // bg="#EAE7DC"
+      
+      
       h={{ lg: "95vh" }}
       border={"1px solid re"}
       width={"100%"}
@@ -26,7 +28,7 @@ function About() {
         border={"1px solid blac"}
         display={"flex"}
         flexDirection={{ base: "column", lg: "row" }}
-        m={{ lg: "20px auto" }}
+        // m={{ lg: "20px auto" }}
         w={{ lg: "80%" }}
         h={{ lg: "95%" }}
       >
@@ -37,7 +39,7 @@ function About() {
           textAlign={"center"}
           pt={{ lg: "100px" }}
         >
-          <Text id="about" fontSize={{ lg: "6xl" }}>
+          <Text id="about"  fontSize={{ lg: "6xl" }}>
             {" "}
             {text}{" "}
           </Text>
@@ -53,6 +55,7 @@ function About() {
           <Box mt={{ lg: "200px" }}>
             <Text
               id="user-detail-intro"
+           
               fontSize={{ base: "18px", sm: "20px", md: "22px", lg: "2xl" }}
               lineHeight={{ lg: "40px" }}
             >

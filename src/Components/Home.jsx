@@ -1,11 +1,11 @@
 import React from "react";
 
 import { Box, Image, Text } from "@chakra-ui/react";
+import Hello from "./Hello";
 
 function Home() {
   return (
     <Box
-      bg="#FAF9F6"
       h={{ lg: "99vh" }}
       // w={"100%"}
       border={"1px solid whit"}
@@ -21,8 +21,8 @@ function Home() {
       <Box
         border={"1px solid whit"}
         w={{ lg: "80%" }}
-        m={{lg:"auto"}}
-        h={{lg:"99%"}}
+        m={{ lg: "auto" }}
+        h={{ lg: "99%" }}
         display={"grid"}
         justifyContent={"center"}
         gridTemplateColumns={{
@@ -55,13 +55,24 @@ function Home() {
           justifyContent={"center"}
           alignItems={"center"}
         >
-          <Text fontSize={{base:"20px",lg:"5xl"}} color="black" border={"1px solid re"}>
+          {/* <Text
+            fontSize={{ base: "20px", lg: "5xl" }}
+            color="black"
+            border={"1px solid re"}
+          >
             Hello,
-          </Text>
-          <Text fontSize={{base:"20px",lg:"6xl"}} id="user-detail-name" color={"black"}>
-          I am Madhur Nadamwar
+          </Text> */}
+          <Hello />
+          <Text color="black" fontSize={{ base: "20px", lg: "6xl" }}>I am</Text>
+          <Text
+            border={"1px solid re"}
+            fontSize={{ base: "20px", lg: "6xl" }}
+            id="user-detail-name"
+            color={"black"}
+          >
+            Madhur Nadamwar
           </Text>{" "}
-          <Text color="black" fontSize={{base:"20px",lg:"6xl"}}>
+          <Text color="black" fontSize={{ base: "20px", lg: "6xl" }}>
             Full Stack Developer
           </Text>
         </Box>

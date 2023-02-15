@@ -55,7 +55,7 @@ function Skills() {
               <SkillBox icon={"mongodb.png"} text={"MongoDB"} />
             </GridItem>
             <GridItem w="100%">
-              <SkillBox icon={"typescript.png"} text={"TypeScript"} />
+              <SkillBox icon={"Typescript.png"} text={"TypeScript"} />
             </GridItem>
             <GridItem w="100%">
               <SkillBox icon={"express.png"} text={"Express"} />

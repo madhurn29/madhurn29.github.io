@@ -9,8 +9,9 @@ function Navbar({ onClick }) {
   return (
     <Flex
       id="nav-menu"
-      border="1px solid red"
-      bg="#EAE7DC"
+      // border="1px solid red"
+      // bg="#EAE7DC"
+      bg="#005c9f"
       position={"sticky"}
       top={0}
       h={"60px"}

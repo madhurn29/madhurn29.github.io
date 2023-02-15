@@ -1,0 +1,11 @@
+.svg {
+  width: 350px;
+}
+
+.container {
+  /* border: 1px solid red; */
+  display: flex;
+  align-items: center;
+  height: 30%;
+  justify-content: center;
+}

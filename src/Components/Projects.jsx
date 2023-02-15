@@ -8,7 +8,7 @@ function Projects() {
       id="projects"
       className="about-section"
       // bg="#EAE7DC"
-      h={{ lg: "95vh" }}
+      // h={{ lg: "95vh" }}
       border={"1px solid red"}
       width={"100%"}
     >
@@ -24,14 +24,90 @@ function Projects() {
 
         <Box
           display={"grid"}
-          gridTemplateColumns={{ lg: "repeat(2,1fr)" }}
+          gridTemplateColumns={{ lg: "repeat(1,1fr)" }}
           gap={{ lg: "50px" }}
         >
-          <ProjectCard imglink={"bewakoof.png"} title={"Stoopid - Bewakoof Clone"} 
-          description={" Bewakoof.com is an E-commerce platform for casual wear and lifestyle brands."}
-          
+          <ProjectCard
+            imglink={"bewakoof.png"}
+            title={"Stoopid - Bewakoof Clone"}
+            description={
+              " Bewakoof.com is an E-commerce platform for casual wear and lifestyle brands."
+            }
+            techStack_1={"html-1.png"}
+            techStack_2={"css-3.png"}
+            techStack_3={"javascript.png"}
+            // techStack_4={"Typescript.png"}
+            // techStack_5={"html-1.png"}
+
+            feature_1="Built the Landing Page"
+            feature_2="Built the Product Page"
+            feature_3="Implemented Sort and Filter functionality"
+            feature_4="User Authentication"
+            projectType={"Individual"}
+            imageOrder={1}
+            contentOrder={2}
           />
-          <ProjectCard />
+          <ProjectCard
+            imglink={"bewakoof.png"}
+            title={"Stoopid - Bewakoof Clone"}
+            description={
+              " Bewakoof.com is an E-commerce platform for casual wear and lifestyle brands."
+            }
+            techStack_1={"html-1.png"}
+            techStack_2={"css-3.png"}
+            techStack_3={"javascript.png"}
+            // techStack_4={"Typescript.png"}
+            // techStack_5={"html-1.png"}
+
+            feature_1="Built the Landing Page"
+            feature_2="Built the Product Page"
+            feature_3="Implemented Sort and Filter functionality"
+            feature_4="User Authentication"
+            projectType={"Individual"}
+            imageOrder={1}
+            contentOrder={1}
+          />
+          <ProjectCard
+            imglink={"bewakoof.png"}
+            title={"Stoopid - Bewakoof Clone"}
+            description={
+              " Bewakoof.com is an E-commerce platform for casual wear and lifestyle brands."
+            }
+            techStack_1={"html-1.png"}
+            techStack_2={"css-3.png"}
+            techStack_3={"javascript.png"}
+            // techStack_4={"Typescript.png"}
+            // techStack_5={"html-1.png"}
+
+            feature_1="Built the Landing Page"
+            feature_2="Built the Product Page"
+            feature_3="Implemented Sort and Filter functionality"
+            feature_4="User Authentication"
+            projectType={"Individual"}
+            imageOrder={1}
+            contentOrder={2}
+          />
+          <ProjectCard
+            imglink={"bewakoof.png"}
+            title={"Stoopid - Bewakoof Clone"}
+            description={
+              " Bewakoof.com is an E-commerce platform for casual wear and lifestyle brands."
+            }
+            techStack_1={"html-1.png"}
+            techStack_2={"css-3.png"}
+            techStack_3={"javascript.png"}
+            // techStack_4={"Typescript.png"}
+            // techStack_5={"html-1.png"}
+
+            feature_1="Built the Landing Page"
+            feature_2="Built the Product Page"
+            feature_3="Implemented Sort and Filter functionality"
+            feature_4="User Authentication"
+            projectType={"Individual"}
+            imageOrder={1}
+            contentOrder={2}
+          />
+          
         </Box>
       </Box>
     </Box>

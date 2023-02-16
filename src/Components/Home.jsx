@@ -7,10 +7,10 @@ import Slide from "react-reveal/Slide";
 
 function Home() {
   return (
-    <Box
+    <Box id="home"
       h={{ lg: "99vh" }}
       // w={"100%"}
-      border={"1px solid whit"}
+      border={"1px solid white"}
       // display={"grid"}
       // justifyContent={"center"}
       // gridTemplateColumns={{

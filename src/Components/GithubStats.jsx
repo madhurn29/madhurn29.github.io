@@ -14,9 +14,9 @@ import Tooltip from "react-tooltip";
 
 function GithubStats() {
   return (
-    <Box mt={{ lg: "50px" }}>
+    <Box mt={{ lg: "100px" }} id="stats" h={{lg:"95vh"}}>
       <Center>
-        <Heading>GithubStats</Heading>
+        <Heading>Github Stats</Heading>
       </Center>
       <Stack mt={{ lg: "40px" }}>
         {/* Calender */}

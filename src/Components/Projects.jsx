@@ -19,7 +19,7 @@ function Projects() {
         h={{ lg: "95%" }}
         m={{ lg: "20px auto" }}
       >
-        <Text textAlign={{ lg: "center" }} fontSize={{ lg: "6xl" }}>
+        <Text textAlign={{ lg: "center" }} fontSize={{ lg: "6xl" }} mb={{lg:"35px"}} >
           Projects
         </Text>
 

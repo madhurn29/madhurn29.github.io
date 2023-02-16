@@ -1,13 +1,4 @@
-import {
-  Box,
-  Image,
-  List,
-  ListIcon,
-  ListItem,
-  Text,
-  UnorderedList,
-} from "@chakra-ui/react";
-import React, { useEffect, useState } from "react";
+import { Box, Image, ListItem, Text, UnorderedList } from "@chakra-ui/react";
 import TechStacks from "./TechStacks";
 
 function ProjectCard({
@@ -84,8 +75,8 @@ function ProjectCard({
           <Box
             className="TechStack_box"
             border={"1px solid re"}
-            w={{base:"80%", lg: "80%" }}
-            display={{base:"flex",sm:"flex", lg: "flex" }}
+            w={{ base: "80%", lg: "80%" }}
+            display={{ base: "flex", sm: "flex", lg: "flex" }}
             gap={{ lg: "10px" }}
           >
             <TechStacks url={techStack_1 || ""} />

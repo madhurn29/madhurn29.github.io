@@ -1,4 +1,4 @@
-import { Box, Grid, GridItem, Image, Text } from "@chakra-ui/react";
+import { Box, Grid, GridItem, Text } from "@chakra-ui/react";
 import React from "react";
 import SkillBox from "./SkillBox";
 

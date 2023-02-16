@@ -48,6 +48,8 @@ function Projects() {
               projectType={"Individual"}
               imageOrder={1}
               contentOrder={2}
+              live_link={"https://stoo-pid.netlify.app/"}
+              github_link={"https://github.com/madhurn29/gullible-pear-795"}
             />
           </Fade>
 

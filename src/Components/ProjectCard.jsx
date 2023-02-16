@@ -1,5 +1,17 @@
-import { Box, Image, ListItem, Text, UnorderedList } from "@chakra-ui/react";
+import {
+  Box,
+  Button,
+  Image,
+  ListItem,
+  Text,
+  Icon,
+  UnorderedList,
+  Link,
+} from "@chakra-ui/react";
+// import { Link } from "react-router-dom";
 import TechStacks from "./TechStacks";
+
+import { RiExternalLinkFill } from "react-icons/ri";
 
 function ProjectCard({
   imglink,
@@ -17,15 +29,15 @@ function ProjectCard({
   projectType,
   imageOrder,
   contentOrder,
+  live_link,
+  github_link,
 }) {
   return (
     <Box
       color={"#fff"}
-      // bg="#005db2"
       bg="#4C8DC9"
-      // bg="#669DD0"
       py="20px"
-      border={"1px solid red"}
+      border={"1px solid re"}
       display={"flex"}
       boxShadow={
         "rgba(0, 0, 0, 0.16) 0px 1px 4px, rgb(51, 51, 51) 0px 0px 0px 3px;"
@@ -97,6 +109,26 @@ function ProjectCard({
           </UnorderedList>
 
           <Text>{projectType} project built and exceuted in 5 days</Text>
+
+          <Box
+            border={"1px solid whit"}
+            width={{ lg: "30%" }}
+            display={{ lg: "flex" }}
+            justifyContent={{ lg: "space-between" }}
+            mt={{ lg: "20px" }}
+          >
+            <Button colorScheme={"red"}>
+              <Link href={live_link} isExternal>
+                Live <Icon as={RiExternalLinkFill} />{" "}
+              </Link>
+            </Button>
+
+            <Button colorScheme={"red"}>
+              <Link href={github_link} isExternal>
+                Github <Icon as={RiExternalLinkFill} />{" "}
+              </Link>
+            </Button>
+          </Box>
         </Box>
       </Box>
     </Box>

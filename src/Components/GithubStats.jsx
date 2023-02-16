@@ -23,7 +23,7 @@ function GithubStats() {
         <GitHubCalendar
           class="react-activity-calendar"
           style={{ margin: "auto" }}
-          username="Varun8177"
+          username="madhurn29"
           blockSize={20}
           fontSize={20}
         >

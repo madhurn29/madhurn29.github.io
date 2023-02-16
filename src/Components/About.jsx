@@ -56,10 +56,10 @@ function About() {
               fontSize={{ base: "18px", sm: "20px", md: "22px", lg: "2xl" }}
               lineHeight={{ lg: "40px" }}
             >
-              Dedicated and efficient, aspiring full-stack developer currently
-              learning MERN stack. Curious to explore and learn new things.
-              Seeking to further improve his skills in a challenging
-              professional setting.
+              Analytical and detail-oriented aspiring Full Stack Developer,
+              currently working on MERN stack. Proficient in HTML, CSS, and
+              Javascript with hands-on experience in cloning websites. Curious
+              to explore and learn new things
             </Text>
           </Box>
           <Box
@@ -70,6 +70,7 @@ function About() {
             mt={{ lg: "100px" }}
           >
             <Button
+              id="resume-button-2"
               bg="#ff0000"
               color={"White"}
               _hover={{ background: "black" }}

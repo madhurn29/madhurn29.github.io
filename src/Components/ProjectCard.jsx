@@ -34,6 +34,7 @@ function ProjectCard({
 }) {
   return (
     <Box
+    className="project-card"
       color={"#fff"}
       bg="#4C8DC9"
       py="20px"
@@ -69,11 +70,11 @@ function ProjectCard({
         p="10px"
         order={contentOrder}
       >
-        <Text fontSize={{ lg: "3xl" }}>{title}</Text>
-        <Text fontSize={{ lg: "xl" }}>{description}</Text>
+        <Text className="project-title" fontSize={{ lg: "3xl" }}>{title}</Text>
+        <Text className="project-description" fontSize={{ lg: "xl" }}>{description}</Text>
 
         <Box
-          className="TechStack_box"
+          className="project-tech-stack"
           border={"1px solid blu"}
           mt={{ lg: "10px" }}
           display={"flex"}
@@ -118,13 +119,13 @@ function ProjectCard({
             mt={{ lg: "20px" }}
           >
             <Button colorScheme={"red"}>
-              <Link href={live_link} isExternal>
+              <Link className="project-deployed-link" href={live_link} isExternal>
                 Live <Icon as={RiExternalLinkFill} />{" "}
               </Link>
             </Button>
 
             <Button colorScheme={"red"}>
-              <Link href={github_link} isExternal>
+              <Link className="project-github-link" href={github_link} isExternal>
                 Github <Icon as={RiExternalLinkFill} />{" "}
               </Link>
             </Button>

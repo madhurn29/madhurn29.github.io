@@ -34,16 +34,15 @@ function ProjectCard({
 }) {
   return (
     <Box
-    className="project-card"
+      className="project-card"
       color={"#fff"}
       bg="#4C8DC9"
-      py="20px"
+      py={{ base: "30px", lg: "20px" }}
       border={"1px solid re"}
       display={"flex"}
       boxShadow={
         "rgba(0, 0, 0, 0.16) 0px 1px 4px, rgb(51, 51, 51) 0px 0px 0px 3px;"
       }
-      // alignItems={{ lg: "center" }}
       justifyContent={{ lg: "center" }}
       flexDirection={{ base: "column", sm: "column", lg: "row" }}
     >
@@ -52,26 +51,30 @@ function ProjectCard({
         display={"flex"}
         justifyContent={"center"}
         border={"1px solid re"}
-        w={{ lg: "50%" }}
+        w={{base:"100%", lg: "50%" }}
         order={imageOrder}
       >
         <Image
           boxShadow="rgba(0, 0, 0, 0.24) 0px 3px 8px"
-          w={{ base: "60%", lg: "80%" }}
+          w={{ base: "80%", lg: "80%" }}
           src={imglink}
         />
       </Box>
       <Box
         border={"1px solid re"}
         m={{ base: "auto" }}
-        w={{ base: "60%", lg: "50%" }}
+        w={{ base: "80%", lg: "50%" }}
         display={"flex"}
         flexDirection={"column"}
         p="10px"
         order={contentOrder}
       >
-        <Text className="project-title" fontSize={{ lg: "3xl" }}>{title}</Text>
-        <Text className="project-description" fontSize={{ lg: "xl" }}>{description}</Text>
+        <Text className="project-title" fontWeight={500} fontSize={{base:"xl", lg: "3xl" }}>
+          {title}
+        </Text>
+        <Text className="project-description" fontSize={{ lg: "xl" }}>
+          {description}
+        </Text>
 
         <Box
           className="project-tech-stack"
@@ -81,16 +84,16 @@ function ProjectCard({
           alignItems={{ lg: "center" }}
           justifyContent={{ lg: "space-between" }}
         >
-          <Box className="TechStack" w={{ lg: "20%" }}>
-            <Text fontSize={{ lg: "xl" }}>Tech Stack -</Text>
+          <Box className="TechStack" w={{base:"40%", lg: "20%" }} mr={{base:"4px"}}>
+            <Text fontSize={{ lg: "xl" }}>Tech Stack - </Text>
           </Box>
 
           <Box
             className="TechStack_box"
             border={"1px solid re"}
-            w={{ base: "80%", lg: "80%" }}
+            w={{ base: "60%", lg: "80%" }}
             display={{ base: "flex", sm: "flex", lg: "flex" }}
-            gap={{ lg: "10px" }}
+            gap={{base:"10px",sm:"10px", lg: "10px" }}
           >
             <TechStacks url={techStack_1 || ""} />
             <TechStacks url={techStack_2 || ""} />
@@ -113,19 +116,27 @@ function ProjectCard({
 
           <Box
             border={"1px solid whit"}
-            width={{ lg: "30%" }}
-            display={{ lg: "flex" }}
-            justifyContent={{ lg: "space-between" }}
-            mt={{ lg: "20px" }}
+            width={{base:"100%", lg: "30%" }}
+            display={{base:"flex", lg: "flex" }}
+            justifyContent={{base:"space-between", lg: "space-between" }}
+            mt={{base:"20px", lg: "20px" }}
           >
             <Button colorScheme={"red"}>
-              <Link className="project-deployed-link" href={live_link} isExternal>
+              <Link
+                className="project-deployed-link"
+                href={live_link}
+                isExternal
+              >
                 Live <Icon as={RiExternalLinkFill} />{" "}
               </Link>
             </Button>
 
             <Button colorScheme={"red"}>
-              <Link className="project-github-link" href={github_link} isExternal>
+              <Link
+                className="project-github-link"
+                href={github_link}
+                isExternal
+              >
                 Github <Icon as={RiExternalLinkFill} />{" "}
               </Link>
             </Button>

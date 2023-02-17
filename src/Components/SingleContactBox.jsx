@@ -7,9 +7,9 @@ import { IoIosCall } from "react-icons/io";
 function SingleContactBox({ id, link, bg, icon, text }) {
   return (
     <Box
-      border={"1px solid blue"}
+      border={"1px solid blu"}
       display={{ base: "flex", lg: "flex" }}
-      flexDirection={{ base: "row", sm: "column" }}
+      flexDirection={{ base: "row", sm: "column",md:"row", lg: "row" }}
       alignItems={{ base: "center", lg: "center" }}
       gap={{ base: "10px", lg: "30px" }}
     >

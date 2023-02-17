@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-scroll";
 import {
   useDisclosure,
   Button,
@@ -20,10 +21,10 @@ function MobNavbar() {
   const btnRef = React.useRef();
   return (
     <>
-      <Box backgroundColor="#d8c3a5" padding="8px" height="50px">
+      <Box backgroundColor="#005c9f" padding="8px" height="50px">
         <Flex minWidth="max-content" alignItems="center" gap="2">
           <Spacer />
-          <Button ref={btnRef} color="black" bgColor="#d8c3a5" onClick={onOpen}>
+          <Button ref={btnRef} color="black" bgColor="#005c9f" onClick={onOpen}>
             <Icon as={GiHamburgerMenu} fontSize="32px" />
           </Button>
           <Drawer
@@ -40,44 +41,112 @@ function MobNavbar() {
               <DrawerBody>
                 <VStack gap={4}>
                   <Box width="100%">
-                    <Button
-                      width="100%"
-                      text="About"
-                      onClick={onClose}
-                      section="about"
+                    <Link
+                      to="home"
+                      spy={"true"}
+                      smooth={"true"}
+                      offset={-100}
+                      duration={500}
                     >
-                      About
-                    </Button>
+                      <Button
+                        width="100%"
+                        // text="About"
+                        onClick={onClose}
+                        section="home"
+                      >
+                        Home
+                      </Button>
+                    </Link>
                   </Box>
                   <Box width="100%">
-                    <Button
-                      width="100%"
-                      text="Skills"
-                      onClick={onClose}
-                      section="skills"
+                    <Link
+                      to="about"
+                      spy={"true"}
+                      smooth={"true"}
+                      offset={20}
+                      duration={500}
                     >
-                      SKills
-                    </Button>
+                      <Button
+                        width="100%"
+                        text="About"
+                        onClick={onClose}
+                        section="about"
+                      >
+                        About
+                      </Button>
+                    </Link>
                   </Box>
                   <Box width="100%">
-                    <Button
-                      width="100%"
-                      text="Projects"
-                      onClick={onClose}
-                      section="projects"
+                    <Link
+                      to="skills"
+                      spy={true}
+                      smooth={true}
+                      offset={-100}
+                      duration={500}
                     >
-                      Projects
-                    </Button>
+                      <Button
+                        width="100%"
+                        text="Skills"
+                        onClick={onClose}
+                        section="skills"
+                      >
+                        Skills
+                      </Button>
+                    </Link>
                   </Box>
                   <Box width="100%">
-                    <Button
-                      width="100%"
-                      text="Contact"
-                      onClick={onClose}
-                      section="contact"
+                    <Link
+                      to="projects"
+                      spy={true}
+                      smooth={true}
+                      offset={-100}
+                      duration={500}
                     >
-                      Contacts
-                    </Button>
+                      <Button
+                        width="100%"
+                        text="Projects"
+                        onClick={onClose}
+                        section="projects"
+                      >
+                        Projects
+                      </Button>
+                    </Link>
+                  </Box>
+                  <Box width="100%">
+                    <Link
+                      to="stats"
+                      spy={true}
+                      smooth={true}
+                      offset={-50}
+                      duration={500}
+                    >
+                      <Button
+                        width="100%"
+                        text="Contact"
+                        onClick={onClose}
+                        section="contact"
+                      >
+                        Github stats
+                      </Button>
+                    </Link>
+                  </Box>
+                  <Box width="100%">
+                    <Link
+                      to="contact"
+                      spy={true}
+                      smooth={true}
+                      offset={20}
+                      duration={500}
+                    >
+                      <Button
+                        width="100%"
+                        text="Contact"
+                        onClick={onClose}
+                        section="contact"
+                      >
+                        Contact
+                      </Button>
+                    </Link>
                   </Box>
                   <Box width="100%">
                     <Button

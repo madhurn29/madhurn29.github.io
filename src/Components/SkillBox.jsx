@@ -9,16 +9,16 @@ function SkillBox({ text, icon }) {
         <Box
           border="1px solid #EAE7DC"
           cursor="pointer"
-          bg={"#669DD0"}
+          bg={"#196DB9"}
           boxShadow="base"
-          padding="28px 25px 0 25px"
+          padding={{base:"15px 10px 10px 5px",lg:"28px 25px 0 25px"}}
           borderRadius="10px"
-          width={{ base: "100px", lg: "100px" }}
-          height={{ base: "120px", lg: "120px" }}
+          width={{ base: "80px", lg: "100px" }}
+          height={{ base: "100px", lg: "120px" }}
           sx={{ transition: "background ,color .5s" }}
           transition="background .5s"
           color="white"
-          _hover={{ backgroundColor: "#196DB9", color: "black" }}
+          _hover={{ backgroundColor: "#669DD0", color: "black" }}
         >
           <Center>
             <Box width="40px" height="40px">
@@ -26,7 +26,7 @@ function SkillBox({ text, icon }) {
             </Box>
           </Center>
           <Center marginTop="16px">
-            <Text className="skills-card-name" fontWeight={"800"}>
+            <Text className="skills-card-name" fontSize={{base:"15px"}} fontWeight={"500"}>
               {text}
             </Text>
           </Center>
@@ -38,3 +38,6 @@ function SkillBox({ text, icon }) {
 }
 
 export default SkillBox;
+// #196DB9
+
+// #669DD0

@@ -40,7 +40,7 @@ function Navbar() {
                 smooth={true}
                 offset={20}
                 duration={500}
-                onClick={closeMenu}
+               
               >
                 Home
               </Link>

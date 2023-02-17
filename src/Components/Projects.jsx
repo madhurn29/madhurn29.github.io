@@ -2,16 +2,15 @@ import { Box, Text } from "@chakra-ui/react";
 import React from "react";
 import ProjectCard from "./ProjectCard";
 import Fade from "react-reveal/Fade";
-import Zoom from 'react-reveal/Zoom';
+import Zoom from "react-reveal/Zoom";
 function Projects() {
   return (
     <Box
       id="projects"
       className="about-section"
-      // bg="#EAE7DC"
-      // h={{ lg: "95vh" }}
       border={"1px solid re"}
       width={"100%"}
+      pb={{base:"10px"}}
     >
       <Box
         border={"1px solid re"}
@@ -19,14 +18,20 @@ function Projects() {
         h={{ lg: "95%" }}
         m={{ lg: "20px auto" }}
       >
-        <Text textAlign={{ lg: "center" }} fontSize={{ lg: "6xl" }} mb={{lg:"35px"}} >
+        <Text
+          textAlign={{base:"center",sm:"center", lg: "center" }}
+          fontSize={{base:"4xl",sm:"4xl", lg: "6xl" }}
+          mb={{base:"25px",sm:"25px", lg: "35px" }}
+        >
           Projects
         </Text>
 
         <Box
           display={"grid"}
+          w={{base:"80%"}}
+          m={{base:"auto"}}
           gridTemplateColumns={{ lg: "repeat(1,1fr)" }}
-          gap={{ lg: "50px" }}
+          gap={{base:"25px", lg: "60px" }}
         >
           <Fade left>
             <ProjectCard

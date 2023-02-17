@@ -5,18 +5,19 @@ import SkillBox from "./SkillBox";
 function Skills() {
   return (
     <Box id="skills" border={"1px solid re"} width={"100%"} h={{ lg: "95vh" }}>
-      <Text mt="30px" color="black" textAlign={"center"} fontSize={"6xl"}>
+      <Text mt="30px" color="black" textAlign={"center"} fontSize={{base:"4xl",lg:"6xl"}}>
         Skills and Tool set{" "}
       </Text>
       <Box
+        border={"1px solid whit"}
         display={"flex"}
         flexDirection={{ base: "column", lg: "row" }}
         justifyContent={{ base: "center" }}
         alignItems={{ base: "center" }}
-        border={"1px solid whit"}
         w={{ lg: "80%" }}
-        m="20px auto"
-        pt="50px"
+        m={{lg:"20px auto"}}
+        pt={{lg:"50px"}}
+        pb={{base:"30px"}}
       >
         <Box
           w={{ base: "95%", lg: "60%" }}
@@ -73,8 +74,9 @@ function Skills() {
           display={"flex"}
           justifyContent={"center"}
           order={{ base: 1, lg: 2 }}
+          my={{base: "15px"}}
         >
-          <Text fontSize={{ lg: "5xl" }} color={"black"}>
+          <Text fontSize={{base:"2xl", lg: "5xl" }} color={"black"}>
             Skills
           </Text>
         </Box>
@@ -86,8 +88,9 @@ function Skills() {
         alignItems={{ base: "center" }}
         border={"1px solid whit"}
         w={{ lg: "80%" }}
-        m="20px auto"
-        pt="50px"
+        m={{lg:"20px auto"}}
+        pt={{lg:"50px"}}
+        pb={{base:"50px"}}
       >
         <Box
           width={{ base: "50%", sm: "50%", md: "35%", lg: "25%" }}
@@ -97,7 +100,7 @@ function Skills() {
           justifyContent={"center"}
           order={{ base: 1, lg: 1 }}
         >
-          <Text fontSize={{lg:"5xl"}} color={"black"}>
+          <Text mb={{base:"15px"}} fontSize={{base:"2xl", lg: "5xl" }} color={"black"}>
             Tools
           </Text>
         </Box>

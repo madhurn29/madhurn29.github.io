@@ -4,7 +4,7 @@ import SkillBox from "./SkillBox";
 
 function Skills() {
   return (
-    <Box id="skills" border={"1px solid red"} width={"100%"} h={{ lg: "95vh" }}>
+    <Box id="skills" border={"1px solid re"} width={"100%"} h={{ lg: "95vh" }}>
       <Text mt="30px" color="black" textAlign={"center"} fontSize={"6xl"}>
         Skills and Tool set{" "}
       </Text>

@@ -10,7 +10,7 @@ function Home() {
     <Box id="home"
       h={{ lg: "99vh" }}
       // w={"100%"}
-      border={"1px solid white"}
+      border={"1px solid whit"}
       // display={"grid"}
       // justifyContent={"center"}
       // gridTemplateColumns={{

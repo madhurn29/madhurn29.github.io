@@ -1,28 +1,20 @@
 import React from "react";
-import {
-  Box,
-  Text,
-  Icon,
-  Link,
-  Center,
-  Circle,
-  Button,
-} from "@chakra-ui/react";
+import { Box, Text, Button } from "@chakra-ui/react";
 import IconBox from "./IconBox";
 
 function About() {
-  let text = "< About />";
+  let text = "About";
   return (
     <Box
       id="about"
       className="about-section"
       h={{ lg: "95vh" }}
-      border={"1px solid re"}
+      border={"1px solid red"}
       width={"100%"}
     >
       <Box
         className="inner-main-box"
-        border={"1px solid blac"}
+        border={"1px solid black"}
         m={{ lg: "auto" }}
         display={"flex"}
         flexDirection={{ base: "column", lg: "row" }}
@@ -33,19 +25,18 @@ function About() {
         <Box
           className="heading"
           w={{ lg: "40%" }}
-          border={"1px solid re"}
+          border={"1px solid red"}
           textAlign={"center"}
           pt={{ lg: "100px" }}
         >
           <Text id="about" fontSize={{ lg: "6xl" }}>
-            {" "}
-            {text}{" "}
+            About
           </Text>
         </Box>
         <Box
           className="content-box"
           w={{ lg: "50%" }}
-          border={"1px solid re"}
+          border={"1px solid red"}
           px={"40px"}
           display={"flex"}
           flexDirection={{ base: "column", lg: "column" }}

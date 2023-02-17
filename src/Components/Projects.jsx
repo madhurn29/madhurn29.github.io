@@ -10,11 +10,11 @@ function Projects() {
       className="about-section"
       // bg="#EAE7DC"
       // h={{ lg: "95vh" }}
-      border={"1px solid red"}
+      border={"1px solid re"}
       width={"100%"}
     >
       <Box
-        border={"1px solid red"}
+        border={"1px solid re"}
         w={{ lg: "90%" }}
         h={{ lg: "95%" }}
         m={{ lg: "20px auto" }}

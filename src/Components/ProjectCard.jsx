@@ -116,12 +116,13 @@ function ProjectCard({
 
           <Box
             border={"1px solid whit"}
-            width={{base:"100%", lg: "30%" }}
+            width={{base:"100%",sm:"100%",md:"50%", lg: "35%" }}
             display={{base:"flex", lg: "flex" }}
             justifyContent={{base:"space-between", lg: "space-between" }}
             mt={{base:"20px", lg: "20px" }}
+            gap={{base:"10px", lg: "10px"}}
           >
-            <Button colorScheme={"red"}>
+            <Button colorScheme={"red"} p={{md:"18px",lg:"10px"}} >
               <Link
                 className="project-deployed-link"
                 href={live_link}
@@ -131,7 +132,7 @@ function ProjectCard({
               </Link>
             </Button>
 
-            <Button colorScheme={"red"}>
+            <Button colorScheme={"red"} p={{md:"18px", lg:"10px"}}>
               <Link
                 className="project-github-link"
                 href={github_link}

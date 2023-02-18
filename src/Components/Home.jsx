@@ -9,7 +9,7 @@ function Home() {
   return (
     <Box
       id="home"
-      h={{ base: "91vh", sm: "95vh", lg: "99vh" }}
+      h={{ base: "91vh", sm: "95vh",md:"95vh", lg: "99vh" }}
       border={"1px solid whit"}
       display={{ base: "flex", sm: "flex" }}
       justifyContent={{ base: "center", sm: "center" }}

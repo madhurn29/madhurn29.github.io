@@ -1,17 +1,23 @@
 import React from "react";
 
 import Madhur_crop from "./Madhur_crop.png";
-import { Show, Box, Hide, Flex, Spacer, Image, Button } from "@chakra-ui/react";
+import {
+  Show,
+  Box,
+  Hide,
+  Flex,
+  Spacer,
+  Image,
+  Button,
+  Link as CLink,
+} from "@chakra-ui/react";
 import MobNavbar from "./MobNavbar";
 import NavbarButton from "./NavbarButton";
 import { Link } from "react-scroll";
-import "./Navbar.css";
-import { useState } from "react";
-function Navbar() {
-  const [click, setClick] = useState(false);
-  const handleClick = () => setClick(!click);
 
-  const closeMenu = () => setClick(false);
+import "./Navbar.css";
+
+function Navbar() {
   return (
     <Flex
       id="nav-menu"
@@ -26,117 +32,120 @@ function Navbar() {
       {/* <Box ml="20px"><Image src={Madhur_crop.png} width={"60%"} /> </Box> */}
       <Spacer />
       <Hide below="md">
-        <Box border={"1px solid re"} mr="40px" minWidth={"550px"}>
+        <Box
+          border={"1px solid re"}
+          mr="80px"
+          minWidth={"550px"}
+          w={{ lg: "40%" }}
+        >
           <Flex alignItems={"center"}>
-            <Button
-              color={"white"}
-              bg="transparent"
-              _hover={{ color: "#005c9f", backgroundColor: "white" }}
+            <Link
+              className={"nav-link home"}
+              to="home"
+              spy={true}
+              smooth={true}
+              offset={20}
+              duration={500}
             >
-              <Link
-                className={"nav-link home"}
-                to="home"
-                spy={true}
-                smooth={true}
-                offset={20}
-                duration={500}
-               
+              <Button
+                color={"white"}
+                bg="transparent"
+                _hover={{ color: "#005c9f", backgroundColor: "white" }}
               >
                 Home
-              </Link>
-            </Button>
+              </Button>
+            </Link>
             <Spacer />
-
-            <Button
-              color={"white"}
-              bg="transparent"
-              _hover={{ color: "#005c9f", backgroundColor: "white" }}
+            <Link
+              className={"nav-link about"}
+              to="about"
+              spy={true}
+              smooth={true}
+              offset={-50}
+              duration={500}
             >
-              <Link
-                className={"nav-link about"}
-                to="about"
-                spy={true}
-                smooth={true}
-                offset={-50}
-                duration={500}
+              <Button
+                color={"white"}
+                bg="transparent"
+                _hover={{ color: "#005c9f", backgroundColor: "white" }}
               >
                 About
-              </Link>
-            </Button>
+              </Button>
+            </Link>
 
             <Spacer />
-
-            <Button
-              color={"white"}
-              bg="transparent"
-              _hover={{ color: "#005c9f", backgroundColor: "white" }}
+            <Link
+              className={"nav-link skills"}
+              to="skills"
+              spy={true}
+              smooth={true}
+              offset={-50}
+              duration={500}
             >
-              <Link
-                className={"nav-link skills"}
-                to="skills"
-                spy={true}
-                smooth={true}
-                offset={-50}
-                duration={500}
+              <Button
+                color={"white"}
+                bg="transparent"
+                _hover={{ color: "#005c9f", backgroundColor: "white" }}
               >
                 Skills{" "}
-              </Link>
-            </Button>
+              </Button>
+            </Link>
 
             <Spacer />
-
-            <Button
-              color={"white"}
-              bg="transparent"
-              _hover={{ color: "#005c9f", backgroundColor: "white" }}
+            <Link
+              className={"nav-link projects"}
+              to="projects"
+              spy={true}
+              smooth={true}
+              offset={-50}
+              duration={500}
             >
-              <Link
-                className={"nav-link projects"}
-                to="projects"
-                spy={true}
-                smooth={true}
-                offset={-50}
-                duration={500}
+              <Button
+                color={"white"}
+                bg="transparent"
+                _hover={{ color: "#005c9f", backgroundColor: "white" }}
               >
                 Projects
-              </Link>
-            </Button>
-            <Spacer />
+              </Button>
+            </Link>
             <Spacer />
 
-            <Button
-              color={"white"}
-              bg="transparent"
-              _hover={{ color: "#005c9f", backgroundColor: "white" }}
+            <Link
+              to="stats"
+              spy={true}
+              smooth={true}
+              offset={-100}
+              duration={500}
             >
-              <Link
-                to="stats"
-                spy={true}
-                smooth={true}
-                offset={-100}
-                duration={500}
+              <Button
+                color={"white"}
+                bg="transparent"
+                _hover={{ color: "#005c9f", backgroundColor: "white" }}
               >
                 Github Stats
-              </Link>
-            </Button>
-            <Button
-              color={"white"}
-              bg="transparent"
-              _hover={{ color: "#005c9f", backgroundColor: "white" }}
+              </Button>
+            </Link>
+            <Spacer />
+
+            <Link
+              className={"nav-link contact"}
+              to="contact"
+              spy={true}
+              smooth={true}
+              offset={50}
+              duration={500}
             >
-              <Link
-                className={"nav-link contact"}
-                to="contact"
-                spy={true}
-                smooth={true}
-                offset={50}
-                duration={500}
+              <Button
+                color={"white"}
+                bg="transparent"
+                _hover={{ color: "#005c9f", backgroundColor: "white" }}
               >
                 Contacts
-              </Link>
-            </Button>
+              </Button>
+            </Link>
 
             <Spacer />
+
             <NavbarButton
               text={"Resume"}
               color="#fff"

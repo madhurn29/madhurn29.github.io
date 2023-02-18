@@ -1,15 +1,12 @@
 import { Box, Link, Icon, Circle, Text } from "@chakra-ui/react";
 import React from "react";
-import { FaLinkedinIn, FaGithub } from "react-icons/fa";
-import { AiOutlineMail } from "react-icons/ai";
-import { IoIosCall } from "react-icons/io";
 
 function SingleContactBox({ id, link, bg, icon, text }) {
   return (
     <Box
       border={"1px solid blu"}
       display={{ base: "flex", lg: "flex" }}
-      flexDirection={{ base: "row", sm: "column",md:"row", lg: "row" }}
+      flexDirection={{ base: "row", sm: "column", md: "row", lg: "row" }}
       alignItems={{ base: "center", lg: "center" }}
       gap={{ base: "10px", lg: "30px" }}
     >
@@ -33,7 +30,9 @@ function SingleContactBox({ id, link, bg, icon, text }) {
       <Box>
         <Box>
           <Link href={link} isExternal>
-            <Text fontSize={{ lg: "2xl" }}>{text}</Text>
+            <Text id={id} fontSize={{ lg: "2xl" }}>
+              {text}
+            </Text>
           </Link>
         </Box>
       </Box>

@@ -10,11 +10,11 @@ function ContactBox() {
     <Box
       className="Icon-bar"
       border="1px solid re"
-      width={{base:"75%", lg: "75%" }}
-      m={{base:"20px auto", lg: "20px auto" }}
+      width={{ base: "75%", sm: "", md: "30%", lg: "75%", xl: "60%" }}
+      m={{ base: "20px auto", lg: "20px auto" }}
       display="flex"
-      flexDirection={{base:"column", lg: "column" }}
-      gap={{base:"10px", lg: "30px" }}
+      flexDirection={{ base: "column", lg: "column" }}
+      gap={{ base: "10px", lg: "30px" }}
     >
       <SingleContactBox
         id="contact-linkedin"
@@ -31,7 +31,7 @@ function ContactBox() {
         text="madhurn29"
       />
       <SingleContactBox
-        id="contact-linkedin"
+        id="contact-email"
         link={"mailto:madhur.nadamwar29@gmail.com"}
         bg={"#ff0000"}
         icon={AiOutlineMail}
@@ -41,7 +41,7 @@ function ContactBox() {
         id="contact-phone"
         link={"tel:+917304127701"}
         bg={"#32d04d"}
-        icon={FaLinkedinIn}
+        icon={IoIosCall}
         text="+91 7304127701"
       />
     </Box>

@@ -34,9 +34,10 @@ function Navbar() {
       <Hide below="md">
         <Box
           border={"1px solid re"}
-          mr="80px"
+          mr={{lg:"80px"}}
           minWidth={"550px"}
-          w={{ lg: "40%" }}
+          w={{ lg: "40%",xl:"50%" }}
+      
         >
           <Flex alignItems={"center"}>
             <Link

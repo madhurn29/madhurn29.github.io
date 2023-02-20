@@ -9,7 +9,7 @@ function Home() {
   return (
     <Box
       id="home"
-      h={{ base: "91vh", sm: "95vh",md:"95vh", lg: "99vh" }}
+      h={{ base: "91vh", sm: "95vh", md: "50vh", lg: "99vh" }}
       border={"1px solid whit"}
       display={{ base: "flex", sm: "flex" }}
       justifyContent={{ base: "center", sm: "center" }}
@@ -24,7 +24,7 @@ function Home() {
         gridTemplateColumns={{
           base: "Repeat(1,1fr)",
           sm: "repeat(1,1fr)",
-          md: "repeat(2,1fr)",
+          md: "repeat(1,1fr)",
           xl: "repeat(2,1fr)",
         }}
       >
@@ -41,7 +41,7 @@ function Home() {
               justifyContent={{ base: "center" }}
             >
               <Image
-                width={{ base: "40%", sm: "25%", md: "35%", lg: "80%" }}
+                width={{ base: "40%", sm: "25%", md: "45%", lg: "80%" }}
                 className="home-img"
                 src="madhur.jpg"
                 borderRadius={"50%"}
@@ -57,15 +57,16 @@ function Home() {
           flexDirection={"column"}
           justifyContent={"center"}
           alignItems={"center"}
+          textAlign={{ xl: "center" }}
         >
           <Hello />
 
           <Slide left>
             <Text
-              color={{ base: "black", lg: "blac" }}
+              color={{ base: "black", md: "black", lg: "black" }}
               fontWeight={{ base: 700 }}
               fontSize={{ base: "3xl", lg: "6xl" }}
-              mt={{base:"10px"}}
+              mt={{ base: "10px" }}
             >
               I am
             </Text>
@@ -75,7 +76,7 @@ function Home() {
               border={"1px solid re"}
               fontWeight={{ base: 700 }}
               fontSize={{ base: "48px", lg: "6xl" }}
-              textAlign={{base: "center"}}
+              textAlign={{ base: "center" }}
               id="user-detail-name"
               color={"black"}
             >

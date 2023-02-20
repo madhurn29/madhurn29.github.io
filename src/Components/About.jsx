@@ -1,17 +1,16 @@
 import React from "react";
-import { Box, Text, Button } from "@chakra-ui/react";
+import { Box, Text, Button, Icon } from "@chakra-ui/react";
 import IconBox from "./IconBox";
-
+import { AiOutlineArrowDown } from "react-icons/ai";
 function About() {
-  
   return (
     <Box
       id="about"
-      className="about-section"
-      h={{ base: "91vh", sm: "91vh", lg: "95vh" }}
-      border={"1px solid red"}
+      className="about section"
+      h={{ base: "91vh", sm: "91vh",md:"50vh", lg: "95vh" }}
+      border={"1px solid re"}
       width={"100%"}
-      display={{base: "flex"}}
+      display={{ base: "flex" }}
       alignItems={{ base: "center" }}
       justifyContent={{ base: "center" }}
     >
@@ -19,12 +18,13 @@ function About() {
         className="inner-main-box"
         border={"1px solid blac"}
         m={{ lg: "auto" }}
+        // bg={{base:"green",sm:"yellow",md:"pink",lg:"transparent"}}
         display={"flex"}
         flexDirection={{ base: "column", lg: "row" }}
         alignItems={{ base: "center" }}
         justifyContent={{ base: "center" }}
         // m={{ lg: "20px auto" }}
-        w={{ lg: "80%" }}
+        w={{base:"90%",sm:"80%",md:"70%", lg: "80%" }}
         h={{ lg: "95%" }}
       >
         <Box
@@ -32,7 +32,7 @@ function About() {
           w={{ lg: "40%" }}
           border={"1px solid re"}
           textAlign={"center"}
-          pt={{ lg: "100px" }}
+          mt={{ lg: "-150px" }}
         >
           <Text
             id="about"
@@ -50,7 +50,7 @@ function About() {
           display={"flex"}
           flexDirection={{ base: "column", lg: "column" }}
         >
-          <Box mt={{ lg: "200px" }}>
+          <Box mt={{ lg: "20px" }}>
             <Text
               id="user-detail-intro"
               fontSize={{ base: "2xl", sm: "20px", md: "22px", lg: "2xl" }}
@@ -65,18 +65,33 @@ function About() {
           <Box
             border="1px solid re"
             display={"flex"}
-            justifyContent={{base:"space-between", lg: "space-between" }}
+            justifyContent={{ base: "space-between", lg: "space-between" }}
             alignItems="center"
-            mt={{base:"40px", lg: "100px" }}
+            mt={{ base: "40px", lg: "100px" }}
           >
-            <Button
-              id="resume-button-2"
-              bg="#ff0000"
-              color={"White"}
-              _hover={{ background: "black" }}
+            <a
+              href="./Madhur_Nadamwar_Resume.pdf"
+              download={"./Madhur_Nadamwar_Resume.pdf"}
             >
-              Resume
-            </Button>
+              <Button
+                id="resume-button-2"
+                bg="#ff0000"
+                p={{ "2xl": "10px" }}
+                color={"White"}
+                onClick={() =>
+                  window.open(
+                    "https://drive.google.com/file/d/11AwYT97eH7iNnqUxyKt9rIBGCzYu4RuK/view"
+                  )
+                }
+                _hover={{ background: "black" }}
+              >
+                <Box>Resume</Box>
+                {""}
+                <Box ml={"4px"}>
+                  <Icon as={AiOutlineArrowDown} />
+                </Box>
+              </Button>
+            </a>
             <IconBox />
           </Box>
         </Box>

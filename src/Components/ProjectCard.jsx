@@ -56,7 +56,7 @@ function ProjectCard({
       >
         <Image
           boxShadow="rgba(0, 0, 0, 0.24) 0px 3px 8px"
-          w={{ base: "80%", lg: "80%" }}
+          w={{ base: "80%", lg: "90%" }}
           src={imglink}
         />
       </Box>
@@ -84,14 +84,14 @@ function ProjectCard({
           alignItems={{ lg: "center" }}
           justifyContent={{ lg: "space-between" }}
         >
-          <Box className="TechStack" w={{base:"40%", lg: "20%" }} mr={{base:"4px"}}>
+          <Box className="TechStack" w={{base:"40%",md:"20%", lg: "20%" }} mr={{base:"4px"}}>
             <Text fontSize={{ lg: "xl" }}>Tech Stack - </Text>
           </Box>
 
           <Box
             className="TechStack_box"
             border={"1px solid re"}
-            w={{ base: "60%", lg: "80%" }}
+            w={{ base: "60%",md:"40%", lg: "80%" }}
             display={{ base: "flex", sm: "flex", lg: "flex" }}
             gap={{base:"10px",sm:"10px", lg: "10px" }}
           >

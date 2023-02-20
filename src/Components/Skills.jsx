@@ -29,7 +29,7 @@ function Skills() {
             templateColumns={{
               base: "repeat(3, 1fr)",
               sm: "repeat(3,1fr)",
-              md: "repeat(4,1fr)",
+              md: "repeat(5,1fr)",
               lg: "repeat(5,1fr)",
             }}
             gap={6}
@@ -114,7 +114,7 @@ function Skills() {
             templateColumns={{
               base: "repeat(3, 1fr)",
               sm: "repeat(3,1fr)",
-              md: "repeat(4,1fr)",
+              md: "repeat(5,1fr)",
               lg: "repeat(5,1fr)",
             }}
             gap={6}

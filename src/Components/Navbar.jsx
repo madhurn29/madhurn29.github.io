@@ -1,16 +1,6 @@
 import React from "react";
 
-import Madhur_crop from "./Madhur_crop.png";
-import {
-  Show,
-  Box,
-  Hide,
-  Flex,
-  Spacer,
-  Image,
-  Button,
-  Link as CLink,
-} from "@chakra-ui/react";
+import { Show, Box, Hide, Flex, Spacer, Image, Button } from "@chakra-ui/react";
 import MobNavbar from "./MobNavbar";
 import NavbarButton from "./NavbarButton";
 import { Link } from "react-scroll";
@@ -29,15 +19,23 @@ function Navbar() {
       zIndex={9}
       boxShadow={"rgba(0, 0, 0, 0.16) 0px 1px 4px"}
     >
-      {/* <Box ml="20px"><Image src={Madhur_crop.png} width={"60%"} /> </Box> */}
+      <Box
+        border={"1px solid red"}
+        ml="20px"
+        width={{ base: "", sm: "", md: "10%", lg: "20%" }}
+      >
+        <Image
+          src={"madhur_logo.png"}
+          width={{ base: "40%", md: "100%", lg: "40%" }}
+        />
+      </Box>
       <Spacer />
       <Hide below="md">
         <Box
-          border={"1px solid re"}
-          mr={{lg:"80px"}}
+          border={"1px solid red"}
+          mr={{ md: "30px", lg: "80px" }}
           minWidth={"550px"}
-          w={{ lg: "40%",xl:"50%" }}
-      
+          w={{ md: "80%", lg: "50%", xl: "50%" }}
         >
           <Flex alignItems={"center"}>
             <Link
@@ -168,21 +166,4 @@ function Navbar() {
 }
 
 export default Navbar;
-{
-  /* <Box
-              display={"flex"}
-              alignItems={"center"}
-              my="15px"
-              justifyContent={"center"}
-              border={"1px solid re"}
-            >
-              <Button
-                className="nav-link about"
-                colorScheme={"black"}
-                variant={"link"}
-                onClick={(e)=>onClick("about")}
-              >
-                About
-              </Button>
-            </Box> */
-}
+

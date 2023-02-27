@@ -1,4 +1,4 @@
-import { Box, Link, Icon, Circle, Text } from "@chakra-ui/react";
+import { Box } from "@chakra-ui/react";
 import React from "react";
 import { FaLinkedinIn, FaGithub } from "react-icons/fa";
 import { AiOutlineMail } from "react-icons/ai";
@@ -50,53 +50,3 @@ function ContactBox() {
 
 export default ContactBox;
 
-{
-  /* <Link id="contact-github" href="https://github.com/madhurn29" isExternal>
-        <Circle
-          size={{ lg: "50px" }}
-          bg="black"
-          color="white"
-          _hover={{
-            backgroundColor: "white",
-            color: "black",
-            cursor: "pointer",
-          }}
-        >
-          <Icon as={FaGithub} w={6} h={6} />
-        </Circle>
-      </Link> */
-}
-
-//   <Link
-//     id="contact-email"
-//     href="mailto:madhur.nadamwar29@gmail.com"
-//     isExternal
-//   >
-//     <Circle
-//       size={{ lg: "50px" }}
-//       bg="#ff0000"
-//       color="white"
-//       _hover={{
-//         backgroundColor: "white",
-//         color: "black",
-//         cursor: "pointer",
-//       }}
-//     >
-//       <Icon as={AiOutlineMail} w={6} h={6} />
-//     </Circle>
-//   </Link>
-
-//   <Link id="contact-phone" href="tel:+917304127701">
-//     <Circle
-//       size={{ lg: "50px" }}
-//       bg="#32d04d"
-//       color="white"
-//       _hover={{
-//         backgroundColor: "white",
-//         color: "black",
-//         cursor: "pointer",
-//       }}
-//     >
-//       <Icon as={IoIosCall} w={6} h={6} />
-//     </Circle>
-//   </Link>

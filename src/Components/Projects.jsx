@@ -28,7 +28,7 @@ function Projects() {
 
         <Box
           display={"grid"}
-          w={{base:"80%"}}
+          w={{base:"100%"}}
           m={{base:"auto"}}
           gridTemplateColumns={{ lg: "repeat(1,1fr)" }}
           gap={{base:"25px", lg: "60px" }}
@@ -46,10 +46,10 @@ function Projects() {
               // techStack_4={"Typescript.png"}
               // techStack_5={"html-1.png"}
 
-              feature_1="Built the Landing Page"
-              feature_2="Built the Product Page"
-              feature_3="Implemented Sort and Filter functionality"
-              feature_4="User Authentication"
+              feature_1="Functional Product Page"
+              feature_2="Functinal Cart Page"
+              feature_3="Sort and Filter functionality"
+              feature_4="User Authentication using Local Storage"
               projectType={"Individual"}
               imageOrder={1}
               contentOrder={2}
@@ -60,47 +60,50 @@ function Projects() {
 
           <Fade right>
             <ProjectCard
-              imglink={"bewakoof.png"}
-              title={"Stoopid - Bewakoof Clone"}
+              imglink={"chargify_homePage_1.png"}
+              title={"Chargify - Chargebee Clone"}
               description={
-                " Bewakoof.com is an E-commerce platform for casual wear and lifestyle brands."
-              }
+                "Chargebee is a SaaS product company which build subscription and billing softwares."}
               techStack_1={"html-1.png"}
               techStack_2={"css-3.png"}
               techStack_3={"javascript.png"}
               // techStack_4={"Typescript.png"}
               // techStack_5={"html-1.png"}
 
-              feature_1="Built the Landing Page"
-              feature_2="Built the Product Page"
-              feature_3="Implemented Sort and Filter functionality"
-              feature_4="User Authentication"
-              projectType={"Individual"}
+              feature_1="User Authentication"
+              feature_2="Functional Dashboard"
+              feature_3="CRUD Operations using API"
+              feature_4="Sort and serach operations using API"
+              projectType={"Collabrative"}
               imageOrder={1}
               contentOrder={1}
+              live_link={"https://chargify.netlify.app/"}
+              github_link={"https://github.com/Varun8177/permissible-step-1626"}
             />
           </Fade>
 
           <Zoom left>
             <ProjectCard
-              imglink={"bewakoof.png"}
-              title={"Stoopid - Bewakoof Clone"}
+              imglink={"dellco_homepage.png"}
+              title={"Dellco - Dell.com Clone"}
               description={
-                " Bewakoof.com is an E-commerce platform for casual wear and lifestyle brands."
+                "Dell is a technology company that develops, sells, repairs and supports computers and related products and services."
               }
               techStack_1={"html-1.png"}
               techStack_2={"css-3.png"}
               techStack_3={"javascript.png"}
-              // techStack_4={"Typescript.png"}
-              // techStack_5={"html-1.png"}
+              techStack_4={"react.png"}
+              techStack_5={"chakra.png"}
 
-              feature_1="Built the Landing Page"
-              feature_2="Built the Product Page"
+              feature_1="User Authentication using mock server"
+              feature_2="Crud Operations using mock server"
               feature_3="Implemented Sort and Filter functionality"
-              feature_4="User Authentication"
+              feature_4="Admin Page"
               projectType={"Individual"}
               imageOrder={1}
               contentOrder={2}
+              live_link={"https://dellco.netlify.app/"}
+              github_link={"https://github.com/madhurn29/rooted-scale-5183"}
             />
           </Zoom>
           <Zoom bottom>

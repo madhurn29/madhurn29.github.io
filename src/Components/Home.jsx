@@ -1,8 +1,8 @@
 import React from "react";
 import Bounce from "react-reveal/Bounce";
-import { Box, Heading, Hide, Image, Text } from "@chakra-ui/react";
+import { Box, Image, Text } from "@chakra-ui/react";
 import Hello from "./Hello";
-import LightSpeed from "react-reveal/LightSpeed";
+// import LightSpeed from "react-reveal/LightSpeed";
 import Slide from "react-reveal/Slide";
 
 function Home() {
@@ -41,7 +41,7 @@ function Home() {
               justifyContent={{ base: "center" }}
             >
               <Image
-                width={{ base: "40%", sm: "25%", md: "45%", lg: "80%" }}
+                width={{ base: "40%", sm: "35%", md: "45%", lg: "80%" }}
                 className="home-img"
                 src="madhur.jpg"
                 borderRadius={"50%"}

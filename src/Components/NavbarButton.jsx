@@ -1,7 +1,7 @@
 import { Button, Icon, Box } from "@chakra-ui/react";
 import React from "react";
 import { AiOutlineArrowDown } from "react-icons/ai";
-function NavbarButton({ text, className, bgcolor, color, id }) {
+function NavbarButton({ text, className,  color, id }) {
   return (
     <a
       href="./Madhur_Nadamwar_Resume.pdf"

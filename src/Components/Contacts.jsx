@@ -1,7 +1,6 @@
 import { Box, Text } from "@chakra-ui/react";
 import React from "react";
 import ContactBox from "./ContactBox";
-import IconBox from "./IconBox";
 
 function Contacts() {
   return (
@@ -28,8 +27,8 @@ function Contacts() {
           <ContactBox />
         </Box>
       </Box>
-    
-    {/* <Box bg="#005c9f" h="100px">
+
+      {/* <Box bg="#005c9f" h="100px">
 
     </Box> */}
     </Box>

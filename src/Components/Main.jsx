@@ -1,6 +1,6 @@
 import { useEffect } from "react";
-import { useRef } from "react";
 import About from "./About";
+
 import Contacts from "./Contacts";
 import GithubStats from "./GithubStats";
 import Home from "./Home";
@@ -8,12 +8,9 @@ import Navbar from "./Navbar";
 import Projects from "./Projects";
 import Skills from "./Skills";
 
-function Main() {
-  const about = useRef(null);
-  const skills = useRef(null);
-  const projects = useRef(null);
-  const contact = useRef(null);
 
+function Main() {
+  
   useEffect(() => {
     window.scroll({
       top: 0,
@@ -35,9 +32,10 @@ function Main() {
         <Home />
         <About />
         <Skills />
+        
         <Projects />
         <GithubStats />
-        <Contacts/>
+        <Contacts />
       </div>
     </>
   );

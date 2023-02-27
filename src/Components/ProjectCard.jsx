@@ -8,7 +8,6 @@ import {
   UnorderedList,
   Link,
 } from "@chakra-ui/react";
-// import { Link } from "react-router-dom";
 import TechStacks from "./TechStacks";
 
 import { RiExternalLinkFill } from "react-icons/ri";
@@ -59,6 +58,7 @@ function ProjectCard({
           w={{ base: "80%", lg: "90%" }}
           src={imglink}
         />
+        {/* <CarouselBox/> */}
       </Box>
       <Box
         border={"1px solid re"}

@@ -2,7 +2,6 @@ import {
   Box,
   Center,
   Flex,
-  Heading,
   Image,
   Spacer,
   Stack,
@@ -50,7 +49,7 @@ function GithubStats() {
           mt={{ lg: "100px" }}
           m={{ base: "auto" }}
           w={{ base: "100%", lg: "100%" }}
-          direction={{ base: "column" ,lg:"row"}}
+          direction={{ base: "column", lg: "row" }}
           justifyContent={"center"}
           alignItems={"center"}
         >
@@ -61,8 +60,8 @@ function GithubStats() {
             }
           >
             <Image
-            w={{base:"80%", lg:"90%"}}
-            m={{ base:"10px auto"}}
+              w={{ base: "80%", lg: "90%" }}
+              m={{ base: "10px auto" }}
               id="github-streak-stats"
               src="https://github-readme-streak-stats.herokuapp.com?user=madhurn29"
             />
@@ -75,8 +74,8 @@ function GithubStats() {
             }
           >
             <Image
-             w={{base:"85%",lg:"100%"}}
-             m={{ base:"10px auto"}}
+              w={{ base: "85%", lg: "100%" }}
+              m={{ base: "10px auto" }}
               id="github-top-langs"
               src="https://github-readme-stats.vercel.app/api/top-langs/?username=madhurn29&layout=compact"
             />
@@ -88,8 +87,8 @@ function GithubStats() {
             to={"https://github-readme-stats.vercel.app/api?username=madhurn29"}
           >
             <Image
-             w={{base:"80%",lg:"90%"}}
-             m={{ base:"10px auto"}}
+              w={{ base: "80%", lg: "90%" }}
+              m={{ base: "10px auto" }}
               id="github-stats-card"
               src="https://github-readme-stats.vercel.app/api?username=madhurn29&count_private=true&show_icons=true"
             />

@@ -18,7 +18,7 @@ function About() {
         className="inner-main-box"
         border={"1px solid blac"}
         m={{ lg: "auto" }}
-        // bg={{base:"green",sm:"yellow",md:"pink",lg:"transparent"}}
+        bg={{base:"green",sm:"yellow",md:"pink",lg:"white",xl:"red"}}
         display={"flex"}
         flexDirection={{ base: "column", lg: "row" }}
         alignItems={{ base: "center" }}
@@ -63,7 +63,7 @@ function About() {
             </Text>
           </Box>
           <Box
-            border="1px solid re"
+            border="1px solid red"
             display={"flex"}
             justifyContent={{ base: "space-between", lg: "space-between" }}
             alignItems="center"
@@ -76,6 +76,7 @@ function About() {
               <Button
                 id="resume-button-2"
                 bg="#ff0000"
+                mr={{base:"4px",sm:"0px"}}
                 p={{ "2xl": "10px" }}
                 color={"White"}
                 onClick={() =>

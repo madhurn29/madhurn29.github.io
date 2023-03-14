@@ -7,7 +7,7 @@ function About() {
     <Box
       id="about"
       className="about section"
-      h={{ base: "91vh", sm: "91vh",md:"50vh", lg: "95vh" }}
+      h={{ base: "91vh", sm: "91vh", md: "50vh", lg: "95vh" }}
       border={"1px solid re"}
       width={"100%"}
       display={{ base: "flex" }}
@@ -18,13 +18,13 @@ function About() {
         className="inner-main-box"
         border={"1px solid blac"}
         m={{ lg: "auto" }}
-        bg={{base:"green",sm:"yellow",md:"pink",lg:"white",xl:"red"}}
+        bg={{ base: "gree", sm: "yello", md: "pin", lg: "whit", xl: "re" }}
         display={"flex"}
         flexDirection={{ base: "column", lg: "row" }}
         alignItems={{ base: "center" }}
         justifyContent={{ base: "center" }}
         // m={{ lg: "20px auto" }}
-        w={{base:"90%",sm:"80%",md:"70%", lg: "80%" }}
+        w={{ base: "90%", sm: "80%", md: "70%", lg: "80%" }}
         h={{ lg: "95%" }}
       >
         <Box
@@ -76,7 +76,7 @@ function About() {
               <Button
                 id="resume-button-2"
                 bg="#ff0000"
-                mr={{base:"4px",sm:"0px"}}
+                mr={{ base: "4px", sm: "0px" }}
                 p={{ "2xl": "10px" }}
                 color={"White"}
                 onClick={() =>

@@ -1,6 +1,15 @@
 import React from "react";
 
-import { Show, Box, Hide, Flex, Spacer, Image, Button } from "@chakra-ui/react";
+import {
+  Show,
+  Box,
+  Hide,
+  Flex,
+  Spacer,
+  Image,
+  Button,
+  Text,
+} from "@chakra-ui/react";
 import MobNavbar from "./MobNavbar";
 import NavbarButton from "./NavbarButton";
 import { Link } from "react-scroll";
@@ -8,6 +17,7 @@ import { Link } from "react-scroll";
 import "./Navbar.css";
 
 function Navbar() {
+  const name = "< Madhur />";
   return (
     <Flex
       id="nav-menu"
@@ -21,13 +31,16 @@ function Navbar() {
     >
       <Box
         border={"1px solid red"}
-        ml="20px"
+        ml="40px"
         width={{ base: "", sm: "", md: "10%", lg: "20%" }}
       >
-        <Image
+        {/* <Image
           src={"madhur_logo.png"}
           width={{ base: "40%", md: "100%", lg: "40%" }}
-        />
+        /> */}
+        <Text color={"#fff"} fontSize={"2xl"}>
+          {name}{" "}
+        </Text>
       </Box>
       <Spacer />
       <Hide below="md">
@@ -166,4 +179,3 @@ function Navbar() {
 }
 
 export default Navbar;
-

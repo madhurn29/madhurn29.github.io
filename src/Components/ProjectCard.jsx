@@ -7,10 +7,12 @@ import {
   Icon,
   UnorderedList,
   Link,
+  AspectRatio,
 } from "@chakra-ui/react";
 import TechStacks from "./TechStacks";
-
+// import { AspectRatio } from "@chakra-ui/layout";
 import { RiExternalLinkFill } from "react-icons/ri";
+import Carousel from "./Carousel";
 
 function ProjectCard({
   imglink,
@@ -37,31 +39,42 @@ function ProjectCard({
       color={"#fff"}
       bg="#4C8DC9"
       py={{ base: "30px", lg: "20px" }}
-      border={"1px solid re"}
       display={"flex"}
       boxShadow={
         "rgba(0, 0, 0, 0.16) 0px 1px 4px, rgb(51, 51, 51) 0px 0px 0px 3px;"
       }
       justifyContent={{ lg: "center" }}
       flexDirection={{ base: "column", sm: "column", lg: "row" }}
+      // w={{ lg: "100%" }}
     >
       <Box
         className="ImageBox"
         display={"flex"}
         justifyContent={"center"}
-        border={"1px solid re"}
-        w={{base:"100%", lg: "50%" }}
+        alignItems={"center"}
+        border={"1px solid red"}
+        w={{ base: "100%", lg: "48%" }}
         order={imageOrder}
       >
-        <Image
-          boxShadow="rgba(0, 0, 0, 0.24) 0px 3px 8px"
-          w={{ base: "80%", lg: "90%" }}
-          src={imglink}
-        />
-        {/* <CarouselBox/> */}
+        {/* <AspectRatio>
+          <Image
+            boxShadow="rgba(0, 0, 0, 0.24) 0px 3px 8px"
+            w={{ base: "80%", lg: "90%" }}
+            src={imglink}
+            objectFit="fill"
+          />
+        </AspectRatio> */}
+        <Box w={{ base: "80%", lg: "100%" }}>
+          <AspectRatio ratio={16 / 9}>
+            <Image _hover={{transform: "scale(1.25)",zIndex:11 ,transition: "transform .2s",transitionTimingFunction:"ease" }} src={imglink}></Image>
+          </AspectRatio>
+        </Box>
       </Box>
+      {/* <Box w={"45%"}>
+        <Carousel></Carousel>
+      </Box> */}
       <Box
-        border={"1px solid re"}
+        border={"1px solid red"}
         m={{ base: "auto" }}
         w={{ base: "80%", lg: "50%" }}
         display={"flex"}
@@ -69,7 +82,11 @@ function ProjectCard({
         p="10px"
         order={contentOrder}
       >
-        <Text className="project-title" fontWeight={500} fontSize={{base:"xl", lg: "3xl" }}>
+        <Text
+          className="project-title"
+          fontWeight={500}
+          fontSize={{ base: "xl", lg: "3xl" }}
+        >
           {title}
         </Text>
         <Text className="project-description" fontSize={{ lg: "xl" }}>
@@ -84,16 +101,20 @@ function ProjectCard({
           alignItems={{ lg: "center" }}
           justifyContent={{ lg: "space-between" }}
         >
-          <Box className="TechStack" w={{base:"40%",md:"20%", lg: "20%" }} mr={{base:"4px"}}>
+          <Box
+            className="TechStack"
+            w={{ base: "40%", md: "20%", lg: "20%" }}
+            mr={{ base: "4px" }}
+          >
             <Text fontSize={{ lg: "xl" }}>Tech Stack - </Text>
           </Box>
 
           <Box
             className="TechStack_box"
             border={"1px solid re"}
-            w={{ base: "60%",md:"40%", lg: "80%" }}
+            w={{ base: "60%", md: "40%", lg: "80%" }}
             display={{ base: "flex", sm: "flex", lg: "flex" }}
-            gap={{base:"10px",sm:"10px", lg: "10px" }}
+            gap={{ base: "10px", sm: "10px", lg: "10px" }}
           >
             <TechStacks url={techStack_1 || ""} />
             <TechStacks url={techStack_2 || ""} />
@@ -116,13 +137,13 @@ function ProjectCard({
 
           <Box
             border={"1px solid whit"}
-            width={{base:"100%",sm:"100%",md:"50%", lg: "35%" }}
-            display={{base:"flex", lg: "flex" }}
-            justifyContent={{base:"space-between", lg: "space-between" }}
-            mt={{base:"20px", lg: "20px" }}
-            gap={{base:"10px", lg: "10px"}}
+            width={{ base: "100%", sm: "100%", md: "50%", lg: "35%" }}
+            display={{ base: "flex", lg: "flex" }}
+            justifyContent={{ base: "space-between", lg: "space-between" }}
+            mt={{ base: "20px", lg: "20px" }}
+            gap={{ base: "10px", lg: "10px" }}
           >
-            <Button colorScheme={"red"} p={{md:"18px",lg:"10px"}} >
+            <Button colorScheme={"red"} p={{ md: "18px", lg: "10px" }}>
               <Link
                 className="project-deployed-link"
                 href={live_link}
@@ -132,7 +153,7 @@ function ProjectCard({
               </Link>
             </Button>
 
-            <Button colorScheme={"red"} p={{md:"18px", lg:"10px"}}>
+            <Button colorScheme={"red"} p={{ md: "18px", lg: "10px" }}>
               <Link
                 className="project-github-link"
                 href={github_link}

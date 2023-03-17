@@ -8,7 +8,7 @@ function Projects() {
     <Box
       id="projects"
       className="about-section"
-      border={"1px solid red"}
+      border={"1px solid re"}
       width={"100%"}
       pb={{ base: "10px" }}
     >
@@ -23,13 +23,13 @@ function Projects() {
       </Box>
 
       <Box
-        border={"1px solid red"}
+        border={"1px solid re"}
         w={{ lg: "90%" }}
         h={{ lg: "95%" }}
         m={{ lg: "20px auto" }}
       >
         <Box
-          border={"1px solid red"}
+          border={"1px solid re"}
           display={"grid"}
           w={{ base: "90%" }}
           m={{ base: "auto" }}

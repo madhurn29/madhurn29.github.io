@@ -1,11 +1,13 @@
 import { Button, Icon, Box } from "@chakra-ui/react";
 import React from "react";
 import { AiOutlineArrowDown } from "react-icons/ai";
-function NavbarButton({ text, className,  color, id }) {
+function NavbarButton({ text, className, color, id }) {
   return (
     <a
-      href="./Madhur_Nadamwar_Resume.pdf"
-      download={"./Madhur_Nadamwar_Resume.pdf"}
+      href="https://drive.google.com/uc?export=download&id=11AwYT97eH7iNnqUxyKt9rIBGCzYu4RuK"
+      download={
+        "https://drive.google.com/uc?export=download&id=11AwYT97eH7iNnqUxyKt9rIBGCzYu4RuK"
+      }
     >
       <Button
         className={className}
@@ -14,8 +16,8 @@ function NavbarButton({ text, className,  color, id }) {
         // bg={{base:"green",sm:"red",lg:"blue",xl:"green","2xl":"black"}}
         bg="red"
         color={color}
-        ml={{lg:"5px"}}
-        mr={{lg:"15px",xl:"55px","2xl":"10px" }}
+        ml={{ lg: "5px" }}
+        mr={{ lg: "15px", xl: "2px", "2xl": "2px" }}
         _hover={{ bg: "black", color: "white" }}
         onClick={() =>
           window.open(

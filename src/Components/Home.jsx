@@ -9,7 +9,7 @@ function Home() {
   return (
     <Box
       id="home"
-      h={{ base: "91vh", sm: "95vh", md: "50vh", lg: "99vh" }}
+      h={{ base: "91vh", sm: "95vh", md: "95vh", lg: "99vh" }}
       border={"1px solid whit"}
       display={{ base: "flex", sm: "flex" }}
       justifyContent={{ base: "center", sm: "center" }}
@@ -24,7 +24,8 @@ function Home() {
         gridTemplateColumns={{
           base: "Repeat(1,1fr)",
           sm: "repeat(1,1fr)",
-          md: "repeat(1,1fr)",
+          md: "repeat(2,1fr)",
+          lg:"repeat(2,1fr)",
           xl: "repeat(2,1fr)",
         }}
       >
@@ -41,7 +42,7 @@ function Home() {
               justifyContent={{ base: "center" }}
             >
               <Image
-                width={{ base: "40%", sm: "35%", md: "45%", lg: "80%" }}
+                width={{ base: "40%", sm: "35%", md: "65%", lg: "80%" }}
                 className="home-img"
                 src="madhur.jpg"
                 borderRadius={"50%"}
@@ -57,7 +58,8 @@ function Home() {
           flexDirection={"column"}
           justifyContent={"center"}
           alignItems={"center"}
-          textAlign={{ xl: "center" }}
+          textAlign={{lg:"center", xl: "center" }}
+          mt={{md:"35px",lg:"25px",xl:"0px"}}
         >
           <Hello />
 
@@ -65,7 +67,7 @@ function Home() {
             <Text
               color={{ base: "black", md: "black", lg: "black" }}
               fontWeight={{ base: 700 }}
-              fontSize={{ base: "3xl", lg: "6xl" }}
+              fontSize={{ base: "3xl", lg: "4xl","2xl":"6xl" }}
               mt={{ base: "10px" }}
             >
               I am
@@ -75,7 +77,7 @@ function Home() {
             <Text
               border={"1px solid re"}
               fontWeight={{ base: 700 }}
-              fontSize={{ base: "48px", lg: "6xl" }}
+              fontSize={{ base: "48px", lg: "4xl","2xl":"6xl" }}
               textAlign={{ base: "center" }}
               id="user-detail-name"
               color={"black"}
@@ -87,7 +89,7 @@ function Home() {
             <Text
               color="black"
               fontWeight={{ base: 700 }}
-              fontSize={{ base: "3xl", lg: "6xl" }}
+              fontSize={{ base: "3xl", lg: "4xl","2xl":"6xl" }}
             >
               Full Stack Developer
             </Text>

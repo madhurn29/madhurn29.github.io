@@ -8,7 +8,7 @@ function IconBox() {
     <Box
       className="Icon-bar"
       border="1px solid re"
-      width={{lg:"40%"}}
+      width={{lg:"50%",xl:"40%"}}
       display="flex"
       gap={{base:"4px"}}
       alignItems={""}

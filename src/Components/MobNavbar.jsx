@@ -19,6 +19,12 @@ import { GiHamburgerMenu } from "react-icons/gi";
 function MobNavbar() {
   const { isOpen, onOpen, onClose } = useDisclosure();
   const btnRef = React.useRef();
+  const handleResume = () => {
+    window.open(
+      "https://drive.google.com/file/d/11AwYT97eH7iNnqUxyKt9rIBGCzYu4RuK/view"
+    );
+    onClose();
+  };
   return (
     <>
       <Box backgroundColor="#005c9f" padding="8px" height="50px">
@@ -152,10 +158,17 @@ function MobNavbar() {
                     <Button
                       width="100%"
                       text="Contact"
-                      onClick={onClose}
+                      onClick={handleResume}
                       section="contact"
                     >
-                      Resume
+                      <a
+                        href="https://drive.google.com/uc?export=download&id=11AwYT97eH7iNnqUxyKt9rIBGCzYu4RuK"
+                        download={
+                          "https://drive.google.com/uc?export=download&id=11AwYT97eH7iNnqUxyKt9rIBGCzYu4RuK"
+                        }
+                      >
+                        Resume
+                      </a>
                     </Button>
                   </Box>
                 </VStack>

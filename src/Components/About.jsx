@@ -7,7 +7,7 @@ function About() {
     <Box
       id="about"
       className="about section"
-      h={{ base: "91vh", sm: "91vh", md: "50vh", lg: "95vh" }}
+      h={{ base: "91vh", sm: "91vh", md: "90vh", lg: "95vh" }}
       border={"1px solid re"}
       width={"100%"}
       display={{ base: "flex" }}
@@ -32,7 +32,7 @@ function About() {
           w={{ lg: "40%" }}
           border={"1px solid re"}
           textAlign={"center"}
-          mt={{ lg: "-150px" }}
+          mt={{ md: "-50px", lg: "-150px" }}
         >
           <Text
             id="about"
@@ -44,9 +44,18 @@ function About() {
         </Box>
         <Box
           className="content-box"
-          w={{ lg: "50%" }}
+          w={{ lg: "65%", xl: "50%" }}
           border={"1px solid re"}
           px={"40px"}
+          mt={{ md: "30px", lg: "0px" }}
+          // bg={{
+          //   base: "red",
+          //   sm: "pink",
+          //   md: "yellow",
+          //   lg: "white",
+          //   xl: "black",
+          //   "2xl": "blue",
+          // }}
           display={"flex"}
           flexDirection={{ base: "column", lg: "column" }}
         >
@@ -63,15 +72,18 @@ function About() {
             </Text>
           </Box>
           <Box
-            border="1px solid red"
+            border="1px solid re"
             display={"flex"}
             justifyContent={{ base: "space-between", lg: "space-between" }}
             alignItems="center"
             mt={{ base: "40px", lg: "100px" }}
           >
             <a
-              href="./Madhur_Nadamwar_Resume.pdf"
-              download={"./Madhur_Nadamwar_Resume.pdf"}
+              id="resume-link-2"
+              href="https://drive.google.com/uc?export=download&id=11AwYT97eH7iNnqUxyKt9rIBGCzYu4RuK"
+              download={
+                "https://drive.google.com/uc?export=download&id=11AwYT97eH7iNnqUxyKt9rIBGCzYu4RuK"
+              }
             >
               <Button
                 id="resume-button-2"

@@ -1,6 +1,6 @@
 import { Box, Center, Image, Text } from "@chakra-ui/react";
 import React from "react";
-import LightSpeed from 'react-reveal/LightSpeed';
+import LightSpeed from "react-reveal/LightSpeed";
 function SkillBox({ text, icon }) {
   return (
     <Box className="skills-card">
@@ -11,7 +11,7 @@ function SkillBox({ text, icon }) {
           cursor="pointer"
           bg={"#196DB9"}
           boxShadow="base"
-          padding={{base:"15px 10px 10px 5px",lg:"28px 25px 0 25px"}}
+          padding={{ base: "15px 10px 10px 5px", lg: "28px 25px 0 25px" }}
           borderRadius="10px"
           width={{ base: "80px", lg: "100px" }}
           height={{ base: "100px", lg: "120px" }}
@@ -26,7 +26,11 @@ function SkillBox({ text, icon }) {
             </Box>
           </Center>
           <Center marginTop="16px">
-            <Text className="skills-card-name" fontSize={{base:"15px"}} fontWeight={"500"}>
+            <Text
+              className="skills-card-name"
+              fontSize={{ base: "15px" }}
+              fontWeight={"500"}
+            >
               {text}
             </Text>
           </Center>

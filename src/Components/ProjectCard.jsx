@@ -12,7 +12,6 @@ import {
 import TechStacks from "./TechStacks";
 // import { AspectRatio } from "@chakra-ui/layout";
 import { RiExternalLinkFill } from "react-icons/ri";
-import Carousel from "./Carousel";
 
 function ProjectCard({
   imglink,
@@ -52,7 +51,7 @@ function ProjectCard({
         display={"flex"}
         justifyContent={"center"}
         alignItems={"center"}
-        border={"1px solid red"}
+        border={"1px solid re"}
         w={{ base: "100%", lg: "48%" }}
         order={imageOrder}
       >
@@ -74,7 +73,7 @@ function ProjectCard({
         <Carousel></Carousel>
       </Box> */}
       <Box
-        border={"1px solid red"}
+        border={"1px solid re"}
         m={{ base: "auto" }}
         w={{ base: "80%", lg: "50%" }}
         display={"flex"}
@@ -103,7 +102,8 @@ function ProjectCard({
         >
           <Box
             className="TechStack"
-            w={{ base: "40%", md: "20%", lg: "20%" }}
+            border={"1px solid re"}
+            w={{ base: "40%", md: "20%", lg: "40%" }}
             mr={{ base: "4px" }}
           >
             <Text fontSize={{ lg: "xl" }}>Tech Stack - </Text>

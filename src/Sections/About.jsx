@@ -136,7 +136,7 @@ export default About;
 </Button>; */
 }
 
-// button outside a
+// button outside anchor tag
 {
   /* <Button
   id="resume-button-2"

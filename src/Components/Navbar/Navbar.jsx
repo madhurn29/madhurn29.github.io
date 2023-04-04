@@ -1,23 +1,12 @@
 import React from "react";
 
-import {
-  Show,
-  Box,
-  Hide,
-  Flex,
-  Spacer,
-  Image,
-  Button,
-  Text,
-} from "@chakra-ui/react";
+import { Show, Box, Hide, Flex, Spacer, Image, Button } from "@chakra-ui/react";
+import logo from "./logo/logo-transparent-png.png";
 import MobNavbar from "./MobNavbar";
 import NavbarButton from "./NavbarButton";
 import { Link } from "react-scroll";
 
-import "./Navbar.css";
-
 function Navbar() {
-  const name = "< Madhur />";
   return (
     <Flex
       id="nav-menu"
@@ -31,24 +20,18 @@ function Navbar() {
     >
       <Box
         border={"1px solid re"}
-        ml={{lg:"40px"}}
+        ml={{ lg: "40px" }}
         width={{ base: "", sm: "", md: "20%", lg: "20%" }}
       >
-        {/* <Image
-          src={"madhur_logo.png"}
-          width={{ base: "40%", md: "100%", lg: "40%" }}
-        /> */}
-        <Text color={"#fff"} fontSize={"2xl"}>
-          {name}{" "}
-        </Text>
+        <Image src={logo} width={{ base: "40%",sm:"30%", md: "80%", lg: "50%" }} />
       </Box>
       <Spacer />
       <Hide below="md">
         <Box
           border={"1px solid re"}
-          mr={{ md: "30px", lg: "20px",xl:"10px","2xl":"20px" }}
+          mr={{ md: "30px", lg: "20px", xl: "10px", "2xl": "20px" }}
           minWidth={"550px"}
-          w={{ md: "80%", lg: "65%", xl: "45%","2xl":"45%" }}
+          w={{ md: "80%", lg: "65%", xl: "45%", "2xl": "45%" }}
         >
           <Flex alignItems={"end"} justifyContent={"end"}>
             <Link
@@ -60,7 +43,7 @@ function Navbar() {
               duration={500}
             >
               <Button
-              border={"1px solid re"}
+                border={"1px solid re"}
                 color={"white"}
                 bg="transparent"
                 _hover={{ color: "#005c9f", backgroundColor: "white" }}

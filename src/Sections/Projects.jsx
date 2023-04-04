@@ -1,6 +1,6 @@
 import { Box, Text } from "@chakra-ui/react";
 import React from "react";
-import ProjectCard from "./ProjectCard";
+import ProjectCard from "../Components/Project/ProjectCard";
 import Fade from "react-reveal/Fade";
 import Zoom from "react-reveal/Zoom";
 function Projects() {
@@ -11,6 +11,7 @@ function Projects() {
       border={"1px solid re"}
       width={"100%"}
       pb={{ base: "10px" }}
+      mt="100px"
     >
       <Box>
         <Text

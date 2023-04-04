@@ -11,7 +11,7 @@ import React from "react";
 import GitHubCalendar from "react-github-calendar";
 import { Link } from "react-router-dom";
 import Tooltip from "react-tooltip";
-
+import styles from "../Components/GithubStats/github.module.css";
 function GithubStats() {
   return (
     <Box
@@ -28,7 +28,12 @@ function GithubStats() {
       </Center>
       <Stack mt={{ lg: "40px" }}>
         {/* Calender */}
-        <Box w={{ base: "85%" }} m={{ base: "auto" }} border={"1px solid re"}>
+        <Box
+          className={styles.stats}
+          w={{ base: "85%" }}
+          m={{ base: "auto" }}
+          border={"1px solid re"}
+        >
           <GitHubCalendar
             class="react-activity-calendar"
             style={{ margin: "auto" }}
@@ -60,6 +65,7 @@ function GithubStats() {
             }
           >
             <Image
+              className={styles.stats}
               w={{ base: "80%", lg: "90%" }}
               m={{ base: "10px auto" }}
               id="github-streak-stats"
@@ -74,6 +80,7 @@ function GithubStats() {
             }
           >
             <Image
+              className={styles.stats}
               w={{ base: "85%", lg: "100%" }}
               m={{ base: "10px auto" }}
               id="github-top-langs"
@@ -87,6 +94,7 @@ function GithubStats() {
             to={"https://github-readme-stats.vercel.app/api?username=madhurn29"}
           >
             <Image
+              className={styles.stats}
               w={{ base: "80%", lg: "90%" }}
               m={{ base: "10px auto" }}
               id="github-stats-card"

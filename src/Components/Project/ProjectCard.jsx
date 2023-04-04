@@ -10,7 +10,7 @@ import {
   AspectRatio,
 } from "@chakra-ui/react";
 import TechStacks from "./TechStacks";
-// import { AspectRatio } from "@chakra-ui/layout";
+import styles from "./projectCard.module.css";
 import { RiExternalLinkFill } from "react-icons/ri";
 
 function ProjectCard({
@@ -55,23 +55,17 @@ function ProjectCard({
         w={{ base: "100%", lg: "48%" }}
         order={imageOrder}
       >
-        {/* <AspectRatio>
-          <Image
-            boxShadow="rgba(0, 0, 0, 0.24) 0px 3px 8px"
-            w={{ base: "80%", lg: "90%" }}
-            src={imglink}
-            objectFit="fill"
-          />
-        </AspectRatio> */}
         <Box w={{ base: "80%", lg: "100%" }}>
           <AspectRatio ratio={16 / 9}>
-            <Image _hover={{transform: "scale(1.25)",zIndex:11 ,transition: "transform .2s",transitionTimingFunction:"ease" }} src={imglink}></Image>
+            <Image
+              className={styles.projectCard}
+              pl={"5px"}
+              src={imglink}
+            ></Image>
           </AspectRatio>
         </Box>
       </Box>
-      {/* <Box w={"45%"}>
-        <Carousel></Carousel>
-      </Box> */}
+
       <Box
         border={"1px solid re"}
         m={{ base: "auto" }}

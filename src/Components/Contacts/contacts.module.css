@@ -1,0 +1,7 @@
+.contact {
+  transition: transform 0.5s ease;
+}
+
+.contact:hover {
+  transform: scale(1.08);
+}

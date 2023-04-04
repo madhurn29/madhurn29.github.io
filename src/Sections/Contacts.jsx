@@ -1,10 +1,10 @@
-import { AspectRatio, Box, Image, Text } from "@chakra-ui/react";
+import { Box, Text } from "@chakra-ui/react";
 import React from "react";
-import ContactBox from "./ContactBox";
+import ContactBox from "../Components/Contacts/ContactBox";
 
 function Contacts() {
   return (
-    <Box id="contact" h={{ lg: "95vh" }} border={"1px solid re"}>
+    <Box id="contact" h={{ lg: "90vh" }} border={"1px solid re"}>
       <Box
         border={"1px solid blac"}
         display={{ lg: "flex" }}
@@ -28,9 +28,7 @@ function Contacts() {
         </Box>
       </Box>
 
-      {/* <Box bg="#005c9f" h="100px">
-  
-    </Box> */}
+      
     </Box>
   );
 }

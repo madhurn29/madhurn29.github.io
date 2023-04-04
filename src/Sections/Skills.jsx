@@ -1,11 +1,21 @@
 import { Box, Grid, GridItem, Text } from "@chakra-ui/react";
 import React from "react";
-import SkillBox from "./SkillBox";
+import SkillBox from "../Components/Skills/SkillBox";
 
 function Skills() {
   return (
-    <Box id="skills" border={"1px solid re"} width={"100%"} h={{"2xl":"95vh" }}>
-      <Text mt="30px" color="black" textAlign={"center"} fontSize={{base:"4xl",lg:"6xl"}}>
+    <Box
+      id="skills"
+      border={"1px solid re"}
+      width={"100%"}
+      h={{ "2xl": "95vh" }}
+    >
+      <Text
+        mt="30px"
+        color="black"
+        textAlign={"center"}
+        fontSize={{ base: "4xl", lg: "6xl" }}
+      >
         Skills and Tool set{" "}
       </Text>
       <Box
@@ -15,12 +25,12 @@ function Skills() {
         justifyContent={{ base: "center" }}
         alignItems={{ base: "center" }}
         w={{ lg: "80%" }}
-        m={{lg:"20px auto"}}
-        pt={{lg:"50px"}}
-        pb={{base:"30px"}}
+        m={{ lg: "20px auto" }}
+        pt={{ lg: "50px" }}
+        pb={{ base: "30px" }}
       >
         <Box
-          w={{ base: "95%", lg: "80%",xl:"60%" }}
+          w={{ base: "95%", lg: "80%", xl: "60%" }}
           m={"auto"}
           border={"1px solid re"}
           order={{ base: 2, lg: 1 }}
@@ -74,9 +84,9 @@ function Skills() {
           display={"flex"}
           justifyContent={"center"}
           order={{ base: 1, lg: 2 }}
-          my={{base: "15px"}}
+          my={{ base: "15px" }}
         >
-          <Text fontSize={{base:"2xl", lg: "5xl" }} color={"black"}>
+          <Text fontSize={{ base: "2xl", lg: "5xl" }} color={"black"}>
             Skills
           </Text>
         </Box>
@@ -88,9 +98,9 @@ function Skills() {
         alignItems={{ base: "center" }}
         border={"1px solid whit"}
         w={{ lg: "80%" }}
-        m={{lg:"20px auto"}}
-        pt={{lg:"50px"}}
-        pb={{base:"50px"}}
+        m={{ lg: "20px auto" }}
+        pt={{ lg: "50px" }}
+        pb={{ base: "50px" }}
       >
         <Box
           width={{ base: "50%", sm: "50%", md: "35%", lg: "25%" }}
@@ -100,12 +110,16 @@ function Skills() {
           justifyContent={"center"}
           order={{ base: 1, lg: 1 }}
         >
-          <Text mb={{base:"15px"}} fontSize={{base:"2xl", lg: "5xl" }} color={"black"}>
+          <Text
+            mb={{ base: "15px" }}
+            fontSize={{ base: "2xl", lg: "5xl" }}
+            color={"black"}
+          >
             Tools
           </Text>
         </Box>
         <Box
-          w={{ base: "95%", lg: "80%",xl:"55%" }}
+          w={{ base: "95%", lg: "80%", xl: "55%" }}
           m={"auto"}
           border={"1px solid re"}
           order={{ base: 2, lg: 2 }}

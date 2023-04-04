@@ -1,0 +1,8 @@
+.projectCard {
+  transition: transform 0.5s ease;
+}
+
+.projectCard:hover {
+  transform: scale(1.1);
+  z-index: 11;
+}

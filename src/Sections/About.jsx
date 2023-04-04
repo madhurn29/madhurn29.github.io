@@ -1,7 +1,8 @@
 import React from "react";
 import { Box, Text, Button, Icon } from "@chakra-ui/react";
-import IconBox from "./IconBox";
+import IconBox from "../Components/About/IconBox";
 import { AiOutlineArrowDown } from "react-icons/ai";
+import styles from "../Components/About/about.module.css";
 function About() {
   return (
     <Box
@@ -86,6 +87,7 @@ function About() {
               }
             >
               <Button
+                className={styles.buttonbox}
                 id="resume-button-2"
                 bg="#ff0000"
                 mr={{ base: "4px", sm: "0px" }}

@@ -120,24 +120,25 @@ function Projects() {
             </Zoom>
             <Zoom bottom>
               <ProjectCard
-                imglink={"bewakoof.png"}
-                title={"Stoopid - Bewakoof Clone"}
+                imglink={"myntra.png"}
+                title={"Myntra Clone"}
                 description={
-                  " Bewakoof.com is an E-commerce platform for casual wear and lifestyle brands."
+                  "Myntra.com is a Casual Wear and Lifestyle Brand E-commerce platform."
                 }
                 techStack_1={"html-1.png"}
                 techStack_2={"css-3.png"}
                 techStack_3={"javascript.png"}
-                // techStack_4={"Typescript.png"}
-                // techStack_5={"html-1.png"}
-
-                feature_1="Built the Landing Page"
-                feature_2="Built the Product Page"
-                feature_3="Implemented Sort and Filter functionality"
-                feature_4="User Authentication"
-                projectType={"Individual"}
+                techStack_4={"react.png"}
+                techStack_5={"redux.png"}
+                feature_1="User Authenticatin"
+                feature_2="Crud Operations using mock server"
+                feature_3="Mulitple filtering and sorting operations"
+                feature_4="Admin Dashboard"
+                projectType={"Collabrative"}
                 imageOrder={1}
                 contentOrder={2}
+                live_link={"https://myntra-clone-iota.vercel.app/"}
+                github_link={"https://github.com/madhurn29/gold-kick-1985"}
               />
             </Zoom>
           </Box>

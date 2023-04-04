@@ -3,6 +3,7 @@ import { Box, Text, Button, Icon } from "@chakra-ui/react";
 import IconBox from "../Components/About/IconBox";
 import { AiOutlineArrowDown } from "react-icons/ai";
 import styles from "../Components/About/about.module.css";
+import { a } from "@react-spring/web";
 function About() {
   return (
     <Box
@@ -49,14 +50,6 @@ function About() {
           border={"1px solid re"}
           px={"40px"}
           mt={{ md: "30px", lg: "0px" }}
-          // bg={{
-          //   base: "red",
-          //   sm: "pink",
-          //   md: "yellow",
-          //   lg: "white",
-          //   xl: "black",
-          //   "2xl": "blue",
-          // }}
           display={"flex"}
           flexDirection={{ base: "column", lg: "column" }}
         >
@@ -79,34 +72,30 @@ function About() {
             alignItems="center"
             mt={{ base: "40px", lg: "100px" }}
           >
-            <a
-              id="resume-link-2"
-              href="https://drive.google.com/uc?export=download&id=11AwYT97eH7iNnqUxyKt9rIBGCzYu4RuK"
-              download={
-                "https://drive.google.com/uc?export=download&id=11AwYT97eH7iNnqUxyKt9rIBGCzYu4RuK"
+            <Button
+              id="resume-button-2"
+              className={styles.buttonbox}
+              onClick={() =>
+                window.open(
+                  "https://drive.google.com/file/d/11AwYT97eH7iNnqUxyKt9rIBGCzYu4RuK/view"
+                )
               }
+              bg="#ff0000"
+              mr={{ base: "4px", sm: "0px" }}
+              p={{ "2xl": "10px" }}
+              color={"White"}
+              _hover={{ background: "black" }}
             >
-              <Button
-                className={styles.buttonbox}
-                id="resume-button-2"
-                bg="#ff0000"
-                mr={{ base: "4px", sm: "0px" }}
-                p={{ "2xl": "10px" }}
-                color={"White"}
-                onClick={() =>
-                  window.open(
-                    "https://drive.google.com/file/d/11AwYT97eH7iNnqUxyKt9rIBGCzYu4RuK/view"
-                  )
+              <a
+                id="resume-link-2"
+                href="https://drive.google.com/uc?export=download&id=11AwYT97eH7iNnqUxyKt9rIBGCzYu4RuK"
+                download={
+                  "https://drive.google.com/uc?export=download&id=11AwYT97eH7iNnqUxyKt9rIBGCzYu4RuK"
                 }
-                _hover={{ background: "black" }}
               >
-                <Box>Resume</Box>
-                {""}
-                <Box ml={"4px"}>
-                  <Icon as={AiOutlineArrowDown} />
-                </Box>
-              </Button>
-            </a>
+                Resume <Icon as={AiOutlineArrowDown} />
+              </a>
+            </Button>
             <IconBox />
           </Box>
         </Box>
@@ -116,3 +105,61 @@ function About() {
 }
 
 export default About;
+
+{
+  /* <a
+  id="resume-link-2"
+  href="https://drive.google.com/uc?export=download&id=11AwYT97eH7iNnqUxyKt9rIBGCzYu4RuK"
+  download={
+    "https://drive.google.com/uc?export=download&id=11AwYT97eH7iNnqUxyKt9rIBGCzYu4RuK"
+  }
+></a>;
+<Button
+  className={styles.buttonbox}
+  id="resume-button-2"
+  bg="#ff0000"
+  mr={{ base: "4px", sm: "0px" }}
+  p={{ "2xl": "10px" }}
+  color={"White"}
+  onClick={() =>
+    window.open(
+      "https://drive.google.com/file/d/11AwYT97eH7iNnqUxyKt9rIBGCzYu4RuK/view"
+    )
+  }
+  _hover={{ background: "black" }}
+>
+  <Box>Resume</Box>
+  {""}
+  <Box ml={"4px"}>
+    <Icon as={AiOutlineArrowDown} />
+  </Box>
+</Button>; */
+}
+
+// button outside a
+{
+  /* <Button
+  id="resume-button-2"
+  className={styles.buttonbox}
+  onClick={() =>
+    window.open(
+      "https://drive.google.com/file/d/11AwYT97eH7iNnqUxyKt9rIBGCzYu4RuK/view"
+    )
+  }
+  bg="#ff0000"
+  mr={{ base: "4px", sm: "0px" }}
+  p={{ "2xl": "10px" }}
+  color={"White"}
+  _hover={{ background: "black" }}
+>
+  <a
+    id="resume-link-2"
+    href="https://drive.google.com/uc?export=download&id=11AwYT97eH7iNnqUxyKt9rIBGCzYu4RuK"
+    download={
+      "https://drive.google.com/uc?export=download&id=11AwYT97eH7iNnqUxyKt9rIBGCzYu4RuK"
+    }
+  >
+    resume
+  </a>
+</Button>; */
+}

@@ -10,7 +10,7 @@ function ContactBox() {
     <Box
       className="Icon-bar"
       border="1px solid re"
-      width={{ base: "75%", sm: "", md: "30%", lg: "75%", xl: "60%" }}
+      width={{ base: "75%", sm: "", md: "40%", lg: "55%", xl: "50%" }}
       m={{ base: "20px auto", lg: "20px auto" }}
       display="flex"
       flexDirection={{ base: "column", lg: "column" }}

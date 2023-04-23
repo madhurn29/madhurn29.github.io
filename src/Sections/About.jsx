@@ -53,7 +53,9 @@ function About() {
           display={"flex"}
           flexDirection={{ base: "column", lg: "column" }}
         >
-          <Box mt={{ lg: "20px" }}>
+          <Box mt={{ lg: "20px" }} 
+          // background={{base:"yellow",sm:"pink",md:"green",lg:"red",xl:"black"}}
+          >
             <Text
               id="user-detail-intro"
               fontSize={{ base: "2xl", sm: "20px", md: "22px", lg: "2xl" }}

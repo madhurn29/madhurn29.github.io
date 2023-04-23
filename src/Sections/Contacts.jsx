@@ -1,6 +1,7 @@
 import { Box, Text } from "@chakra-ui/react";
 import React from "react";
 import ContactBox from "../Components/Contacts/ContactBox";
+import ContactForm from "../Components/Contacts/ContactForm";
 
 function Contacts() {
   return (
@@ -20,15 +21,20 @@ function Contacts() {
             textAlign={{ base: "center" }}
             fontSize={{ base: "4xl", lg: "6xl" }}
           >
-            Connect With Me
+            Connect with Me
           </Text>
         </Box>
-        <Box border={"1px solid re"} w={{ lg: "50%" }}>
+        <Box
+          border={"1px solid re"}
+          display={"flex"}
+          flexDirection={{ base: "column-reverse",sm:"row", md: "row", lg: "row" }}
+          m={"20px auto"}
+          w={{sm:"80%", md: "80%", lg: "90%" }}
+        >
           <ContactBox />
+          <ContactForm />
         </Box>
       </Box>
-
-      
     </Box>
   );
 }

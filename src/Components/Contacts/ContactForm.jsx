@@ -44,7 +44,7 @@ function ContactForm() {
 
     // console.log(process.env.REACT_APP_PORT ," hello");
     // console.log(process.env.REACT_APP_SERVICE_ID);
-    if (name == "" || email == "" || message == "") {
+    if (name === "" || email === "" || message === "") {
       ShowToast("Please fill all the details", "Try again later", "warning");
     } else {
       setLoading(true);
@@ -84,7 +84,7 @@ function ContactForm() {
     <Box
       // maxW="lg"
       border={"1px solid blac"}
-      w={{ base: "80%", md: "50%", lg: "43%",xl:"50%" }}
+      w={{ base: "80%", md: "50%", lg: "43%", xl: "50%" }}
       mx="auto"
       // mt={10}
       bg="#005c9f"

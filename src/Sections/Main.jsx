@@ -7,8 +7,7 @@ import Home from "./Home";
 import Navbar from "../Components/Navbar/Navbar";
 import Projects from "./Projects";
 import Skills from "./Skills";
-import { Box, Heading, Image, Text } from "@chakra-ui/react";
-import { BsBalloonHeartFill } from "react-icons/bs";
+import { Box,  Text } from "@chakra-ui/react";
 function Main() {
   useEffect(() => {
     window.scroll({

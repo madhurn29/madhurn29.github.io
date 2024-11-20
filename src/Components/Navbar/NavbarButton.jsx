@@ -1,4 +1,4 @@
-import { Button, Icon, Box } from "@chakra-ui/react";
+import { Button, Icon } from "@chakra-ui/react";
 import React from "react";
 import { AiOutlineArrowDown } from "react-icons/ai";
 function NavbarButton({ text, className, color, id }) {
